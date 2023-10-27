@@ -1,0 +1,842 @@
+{
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=track&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=10",
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+              },
+              "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+              "id": "6goK4KMSdP4A8lw8jk4ADk",
+              "name": "Pokémon",
+              "type": "artist",
+              "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4R0boGQyiCUt3i7pAKCitR"
+          },
+          "href": "https://api.spotify.com/v1/albums/4R0boGQyiCUt3i7pAKCitR",
+          "id": "4R0boGQyiCUt3i7pAKCitR",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273b26ee3ea08f1e5d8dffbab4b",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02b26ee3ea08f1e5d8dffbab4b",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851b26ee3ea08f1e5d8dffbab4b",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "Pokemon - 2.b.a. Master - Music From The Hit Tv Series",
+          "release_date": "1999-06-29",
+          "release_date_precision": "day",
+          "total_tracks": 13,
+          "type": "album",
+          "uri": "spotify:album:4R0boGQyiCUt3i7pAKCitR"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 198186,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USKO10406205"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3OIHgTyQdiAGMmpjQaNxp3"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3OIHgTyQdiAGMmpjQaNxp3",
+        "id": "3OIHgTyQdiAGMmpjQaNxp3",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Pokémon Theme",
+        "popularity": 65,
+        "preview_url": "https://p.scdn.co/mp3-preview/2396b4e9ba3b301c76b2fa6da5d38d046eab658c?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:3OIHgTyQdiAGMmpjQaNxp3"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+              },
+              "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+              "id": "6goK4KMSdP4A8lw8jk4ADk",
+              "name": "Pokémon",
+              "type": "artist",
+              "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4R0boGQyiCUt3i7pAKCitR"
+          },
+          "href": "https://api.spotify.com/v1/albums/4R0boGQyiCUt3i7pAKCitR",
+          "id": "4R0boGQyiCUt3i7pAKCitR",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273b26ee3ea08f1e5d8dffbab4b",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02b26ee3ea08f1e5d8dffbab4b",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851b26ee3ea08f1e5d8dffbab4b",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "Pokemon - 2.b.a. Master - Music From The Hit Tv Series",
+          "release_date": "1999-06-29",
+          "release_date_precision": "day",
+          "total_tracks": 13,
+          "type": "album",
+          "uri": "spotify:album:4R0boGQyiCUt3i7pAKCitR"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 183053,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USKO10406216"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0FIJvfMOjEZhSs5hTObtKP"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0FIJvfMOjEZhSs5hTObtKP",
+        "id": "0FIJvfMOjEZhSs5hTObtKP",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Pokérap",
+        "popularity": 53,
+        "preview_url": "https://p.scdn.co/mp3-preview/120b2d049217a7dc3ba66000b2fffb0d9971bdb2?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 12,
+        "type": "track",
+        "uri": "spotify:track:0FIJvfMOjEZhSs5hTObtKP"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+              },
+              "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+              "id": "6goK4KMSdP4A8lw8jk4ADk",
+              "name": "Pokémon",
+              "type": "artist",
+              "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/46zxU6iZWf3eElipq011m7"
+          },
+          "href": "https://api.spotify.com/v1/albums/46zxU6iZWf3eElipq011m7",
+          "id": "46zxU6iZWf3eElipq011m7",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273d89b39d2f9d22977e44205e8",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02d89b39d2f9d22977e44205e8",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851d89b39d2f9d22977e44205e8",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "Pokemon - Totally Pokémon - Music From The Hit Tv Series",
+          "release_date": "2001-01-23",
+          "release_date_precision": "day",
+          "total_tracks": 19,
+          "type": "album",
+          "uri": "spotify:album:46zxU6iZWf3eElipq011m7"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 174920,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USKO10100678"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1KHGcxsdpkvADuKozlrv1e"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1KHGcxsdpkvADuKozlrv1e",
+        "id": "1KHGcxsdpkvADuKozlrv1e",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Pokémon Johto",
+        "popularity": 49,
+        "preview_url": "https://p.scdn.co/mp3-preview/d34d82254c566d6b2a1024d777068b2d70659b84?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:1KHGcxsdpkvADuKozlrv1e"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+              },
+              "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+              "id": "6goK4KMSdP4A8lw8jk4ADk",
+              "name": "Pokémon",
+              "type": "artist",
+              "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1dOfp0HyYftdtpf5l50EIK"
+          },
+          "href": "https://api.spotify.com/v1/albums/1dOfp0HyYftdtpf5l50EIK",
+          "id": "1dOfp0HyYftdtpf5l50EIK",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2735dc48545a240d89890b836f3",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e025dc48545a240d89890b836f3",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048515dc48545a240d89890b836f3",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "Pokemon X - Ten Years Of Pokemon",
+          "release_date": "2007-03-27",
+          "release_date_precision": "day",
+          "total_tracks": 13,
+          "type": "album",
+          "uri": "spotify:album:1dOfp0HyYftdtpf5l50EIK"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 60400,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USAOG0400113"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1ktdvlCKXJZx3tjHzO8bIU"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1ktdvlCKXJZx3tjHzO8bIU",
+        "id": "1ktdvlCKXJZx3tjHzO8bIU",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Pokemon World",
+        "popularity": 49,
+        "preview_url": "https://p.scdn.co/mp3-preview/eaa6ef509e3141dea5dda3282ad88c0405390c0f?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 3,
+        "type": "track",
+        "uri": "spotify:track:1ktdvlCKXJZx3tjHzO8bIU"
+      },
+      {
+        "album": {
+          "album_type": "single",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6jEiUoyyJNPHzSR0Nib6HX"
+              },
+              "href": "https://api.spotify.com/v1/artists/6jEiUoyyJNPHzSR0Nib6HX",
+              "id": "6jEiUoyyJNPHzSR0Nib6HX",
+              "name": "Walk off the Earth",
+              "type": "artist",
+              "uri": "spotify:artist:6jEiUoyyJNPHzSR0Nib6HX"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+              },
+              "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+              "id": "6goK4KMSdP4A8lw8jk4ADk",
+              "name": "Pokémon",
+              "type": "artist",
+              "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/3wZTKnhwWhTW5EwfyGc4OT"
+          },
+          "href": "https://api.spotify.com/v1/albums/3wZTKnhwWhTW5EwfyGc4OT",
+          "id": "3wZTKnhwWhTW5EwfyGc4OT",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273b4dc85cf86b39a0f9b086c6a",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02b4dc85cf86b39a0f9b086c6a",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851b4dc85cf86b39a0f9b086c6a",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "The Journey Starts Today (Theme from Pokémon Journeys)",
+          "release_date": "2020-06-12",
+          "release_date_precision": "day",
+          "total_tracks": 1,
+          "type": "album",
+          "uri": "spotify:album:3wZTKnhwWhTW5EwfyGc4OT"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6jEiUoyyJNPHzSR0Nib6HX"
+            },
+            "href": "https://api.spotify.com/v1/artists/6jEiUoyyJNPHzSR0Nib6HX",
+            "id": "6jEiUoyyJNPHzSR0Nib6HX",
+            "name": "Walk off the Earth",
+            "type": "artist",
+            "uri": "spotify:artist:6jEiUoyyJNPHzSR0Nib6HX"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 142687,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "TCAEW2085835"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3OnPQNK9OvIeRL8Q9ogY92"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3OnPQNK9OvIeRL8Q9ogY92",
+        "id": "3OnPQNK9OvIeRL8Q9ogY92",
+        "is_local": false,
+        "is_playable": true,
+        "name": "The Journey Starts Today (Theme from Pokémon Journeys)",
+        "popularity": 59,
+        "preview_url": "https://p.scdn.co/mp3-preview/771efc6c9b27d40d0e14d20c200fe3644f0c7b06?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:3OnPQNK9OvIeRL8Q9ogY92"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6dZAVi5PugDwlAnH8KMEGl"
+              },
+              "href": "https://api.spotify.com/v1/artists/6dZAVi5PugDwlAnH8KMEGl",
+              "id": "6dZAVi5PugDwlAnH8KMEGl",
+              "name": "Video Games Live",
+              "type": "artist",
+              "uri": "spotify:artist:6dZAVi5PugDwlAnH8KMEGl"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2KHrrZCAkI8HOIJpOqLzET"
+          },
+          "href": "https://api.spotify.com/v1/albums/2KHrrZCAkI8HOIJpOqLzET",
+          "id": "2KHrrZCAkI8HOIJpOqLzET",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2730deacf472b21a3773d37b3f4",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e020deacf472b21a3773d37b3f4",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048510deacf472b21a3773d37b3f4",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "Level 3",
+          "release_date": "2014-02-07",
+          "release_date_precision": "day",
+          "total_tracks": 15,
+          "type": "album",
+          "uri": "spotify:album:2KHrrZCAkI8HOIJpOqLzET"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6dZAVi5PugDwlAnH8KMEGl"
+            },
+            "href": "https://api.spotify.com/v1/artists/6dZAVi5PugDwlAnH8KMEGl",
+            "id": "6dZAVi5PugDwlAnH8KMEGl",
+            "name": "Video Games Live",
+            "type": "artist",
+            "uri": "spotify:artist:6dZAVi5PugDwlAnH8KMEGl"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 254747,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "uscgh1459701"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/74RXECEEdc945gowRY4ebj"
+        },
+        "href": "https://api.spotify.com/v1/tracks/74RXECEEdc945gowRY4ebj",
+        "id": "74RXECEEdc945gowRY4ebj",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Pokémon®",
+        "popularity": 45,
+        "preview_url": "https://p.scdn.co/mp3-preview/95b43bf99b5a8e05778bb4ab8ca562351d2a8b13?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 9,
+        "type": "track",
+        "uri": "spotify:track:74RXECEEdc945gowRY4ebj"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4uV63QZhfi1U3oe38acQJA"
+              },
+              "href": "https://api.spotify.com/v1/artists/4uV63QZhfi1U3oe38acQJA",
+              "id": "4uV63QZhfi1U3oe38acQJA",
+              "name": "Otaku",
+              "type": "artist",
+              "uri": "spotify:artist:4uV63QZhfi1U3oe38acQJA"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5H5W5vmpQSBmQv1uMVor61"
+              },
+              "href": "https://api.spotify.com/v1/artists/5H5W5vmpQSBmQv1uMVor61",
+              "id": "5H5W5vmpQSBmQv1uMVor61",
+              "name": "LoFi Waiter",
+              "type": "artist",
+              "uri": "spotify:artist:5H5W5vmpQSBmQv1uMVor61"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/6KWQNJKHwFUI53IZWiVxwF"
+          },
+          "href": "https://api.spotify.com/v1/albums/6KWQNJKHwFUI53IZWiVxwF",
+          "id": "6KWQNJKHwFUI53IZWiVxwF",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2739a6677b78621b4a5ba4f4264",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e029a6677b78621b4a5ba4f4264",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048519a6677b78621b4a5ba4f4264",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "Anime Lofi Vol. 3",
+          "release_date": "2022-07-29",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:6KWQNJKHwFUI53IZWiVxwF"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4uV63QZhfi1U3oe38acQJA"
+            },
+            "href": "https://api.spotify.com/v1/artists/4uV63QZhfi1U3oe38acQJA",
+            "id": "4uV63QZhfi1U3oe38acQJA",
+            "name": "Otaku",
+            "type": "artist",
+            "uri": "spotify:artist:4uV63QZhfi1U3oe38acQJA"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5H5W5vmpQSBmQv1uMVor61"
+            },
+            "href": "https://api.spotify.com/v1/artists/5H5W5vmpQSBmQv1uMVor61",
+            "id": "5H5W5vmpQSBmQv1uMVor61",
+            "name": "LoFi Waiter",
+            "type": "artist",
+            "uri": "spotify:artist:5H5W5vmpQSBmQv1uMVor61"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 105007,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "FRR642201130"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/5mLFWEReLfkiS0vKBUfoGV"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5mLFWEReLfkiS0vKBUfoGV",
+        "id": "5mLFWEReLfkiS0vKBUfoGV",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Pokemon Theme",
+        "popularity": 56,
+        "preview_url": "https://p.scdn.co/mp3-preview/247f7c2f93365374f98dabca8eed1a059b0178fa?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 7,
+        "type": "track",
+        "uri": "spotify:track:5mLFWEReLfkiS0vKBUfoGV"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+              },
+              "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+              "id": "6goK4KMSdP4A8lw8jk4ADk",
+              "name": "Pokémon",
+              "type": "artist",
+              "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/7gKdoim3rYHoNGw4p71kJx"
+          },
+          "href": "https://api.spotify.com/v1/albums/7gKdoim3rYHoNGw4p71kJx",
+          "id": "7gKdoim3rYHoNGw4p71kJx",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2737afb23f551b6c02ab5fde21f",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e027afb23f551b6c02ab5fde21f",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048517afb23f551b6c02ab5fde21f",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "Pokémon Movie Music Collection (Original Soundtrack)",
+          "release_date": "2017-12-23",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:7gKdoim3rYHoNGw4p71kJx"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6ep1x3L37GYJ8IHVORMgGj"
+            },
+            "href": "https://api.spotify.com/v1/artists/6ep1x3L37GYJ8IHVORMgGj",
+            "id": "6ep1x3L37GYJ8IHVORMgGj",
+            "name": "Ben Dixon and the Sad Truth",
+            "type": "artist",
+            "uri": "spotify:artist:6ep1x3L37GYJ8IHVORMgGj"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/20v1pWVDGh4qNUlJeoCGef"
+            },
+            "href": "https://api.spotify.com/v1/artists/20v1pWVDGh4qNUlJeoCGef",
+            "id": "20v1pWVDGh4qNUlJeoCGef",
+            "name": "Ed Goldfarb",
+            "type": "artist",
+            "uri": "spotify:artist:20v1pWVDGh4qNUlJeoCGef"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 159050,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "TCADJ1746630"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7jQ5004OFCS43j12FSzsov"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7jQ5004OFCS43j12FSzsov",
+        "id": "7jQ5004OFCS43j12FSzsov",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Pokémon Theme (Version XY) [From \"Pokémon the Movie: Diancie and the Cocoon of Destruction\"]",
+        "popularity": 48,
+        "preview_url": "https://p.scdn.co/mp3-preview/989d96eb2c775a65953261ff566b70ff9372993a?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 9,
+        "type": "track",
+        "uri": "spotify:track:7jQ5004OFCS43j12FSzsov"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3yTNaLgtCufxUYDsWa5MpA"
+              },
+              "href": "https://api.spotify.com/v1/artists/3yTNaLgtCufxUYDsWa5MpA",
+              "id": "3yTNaLgtCufxUYDsWa5MpA",
+              "name": "Kato",
+              "type": "artist",
+              "uri": "spotify:artist:3yTNaLgtCufxUYDsWa5MpA"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2ztCJz2gwfKnjwuyKBbcqZ"
+          },
+          "href": "https://api.spotify.com/v1/albums/2ztCJz2gwfKnjwuyKBbcqZ",
+          "id": "2ztCJz2gwfKnjwuyKBbcqZ",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273ff662f0affe1a5420d3d6b81",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02ff662f0affe1a5420d3d6b81",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851ff662f0affe1a5420d3d6b81",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "Sleep Anime Lofi Beats",
+          "release_date": "2021-09-17",
+          "release_date_precision": "day",
+          "total_tracks": 20,
+          "type": "album",
+          "uri": "spotify:album:2ztCJz2gwfKnjwuyKBbcqZ"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3yTNaLgtCufxUYDsWa5MpA"
+            },
+            "href": "https://api.spotify.com/v1/artists/3yTNaLgtCufxUYDsWa5MpA",
+            "id": "3yTNaLgtCufxUYDsWa5MpA",
+            "name": "Kato",
+            "type": "artist",
+            "uri": "spotify:artist:3yTNaLgtCufxUYDsWa5MpA"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 80570,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "CH7812100575"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/59dMMxNmcPXPKa4S0vYi1j"
+        },
+        "href": "https://api.spotify.com/v1/tracks/59dMMxNmcPXPKa4S0vYi1j",
+        "id": "59dMMxNmcPXPKa4S0vYi1j",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Pokémon Theme Lofi",
+        "popularity": 56,
+        "preview_url": "https://p.scdn.co/mp3-preview/9a62bd920ab7d97af93629f617283d88c27e30ea?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 16,
+        "type": "track",
+        "uri": "spotify:track:59dMMxNmcPXPKa4S0vYi1j"
+      },
+      {
+        "album": {
+          "album_type": "single",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0RFJDgZlnC3PX57DeVc0WP"
+              },
+              "href": "https://api.spotify.com/v1/artists/0RFJDgZlnC3PX57DeVc0WP",
+              "id": "0RFJDgZlnC3PX57DeVc0WP",
+              "name": "Mishovy silenosti",
+              "type": "artist",
+              "uri": "spotify:artist:0RFJDgZlnC3PX57DeVc0WP"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2uGeFDagfIOokuTpz8nAXk"
+          },
+          "href": "https://api.spotify.com/v1/albums/2uGeFDagfIOokuTpz8nAXk",
+          "id": "2uGeFDagfIOokuTpz8nAXk",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2739d958e1cd0c260c70c5485a7",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e029d958e1cd0c260c70c5485a7",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048519d958e1cd0c260c70c5485a7",
+              "width": 64
+            }
+          ],
+          "is_playable": true,
+          "name": "I Play Pokemon GO Everyday (PG Song for Kids)",
+          "release_date": "2016-07-16",
+          "release_date_precision": "day",
+          "total_tracks": 1,
+          "type": "album",
+          "uri": "spotify:album:2uGeFDagfIOokuTpz8nAXk"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0RFJDgZlnC3PX57DeVc0WP"
+            },
+            "href": "https://api.spotify.com/v1/artists/0RFJDgZlnC3PX57DeVc0WP",
+            "id": "0RFJDgZlnC3PX57DeVc0WP",
+            "name": "Mishovy silenosti",
+            "type": "artist",
+            "uri": "spotify:artist:0RFJDgZlnC3PX57DeVc0WP"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 75284,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "QM2PV1690085"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7EAwgBKCOZYZ7d1NLw2FII"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7EAwgBKCOZYZ7d1NLw2FII",
+        "id": "7EAwgBKCOZYZ7d1NLw2FII",
+        "is_local": false,
+        "is_playable": true,
+        "name": "I Play Pokemon GO Everyday (PG Song for Kids)",
+        "popularity": 35,
+        "preview_url": "https://p.scdn.co/mp3-preview/5b8a3bf4ba09a4613907b0ac52a1c5b67dbafad7?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:7EAwgBKCOZYZ7d1NLw2FII"
+      }
+    ],
+    "limit": 10,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=track&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=10&limit=10",
+    "offset": 0,
+    "previous": null,
+    "total": 841
+  }
+}
