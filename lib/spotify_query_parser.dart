@@ -1,15 +1,24 @@
 import 'dart:convert';
 
+import 'package:media_recommender/parse_results.dart';
+import 'package:media_recommender/track.dart';
+
 class SpotifyQueryParser {
 
-  parseJson(String jsonData){
+  ParseResult parseJson(String jsonData) {
     final decoded = jsonDecode(jsonData);
-    if (decoded['tracks'] != null && decoded['tracks']['items'] != null && decoded['tracks']['items'].isNotEmpty) {
-      final firstTrack = decoded['tracks']['items'][0];
-      return firstTrack['name'];
+    List<Track> tracks = [];
+
+    if (decoded['tracks'] != null &&
+        decoded['tracks']['items'] != null &&
+        decoded['tracks']['items'].isNotEmpty) {
+      for (var trackItem in decoded['tracks']['items']) {
+        tracks.add(Track(trackItem['name']));
+      }
     }
 
-    return null; // or throw an error or return a default value
+    return ParseResult(tracks);
   }
+
 
 }
