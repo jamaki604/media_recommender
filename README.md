@@ -1,16 +1,12 @@
 # media_recommender
 
-A new Flutter project.
+A final project for CS222. This project will take audio content from spotify and let the user find any audio content they want and input them on a page.
+
+Author 1: Andre Boxsley 
+Author 2: David Case
+Author 4: Liam Grube
+Author 3: Jake King
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Our program should solve the following. 
