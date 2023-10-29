@@ -1,12 +1,14 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:media_recommender/spotify_authorization.dart';
+import 'package:media_recommender/spotify_query_updater.dart';
 import 'package:media_recommender/token_storage.dart';
 
 void main() {
   final auth = SpotifyAuthorization();
   final storage = TokenStorage();
+  final spotifyQuery = SpotifyQueryUpdater();
 
-  test('Obtain and store Spotify access token', () async {
+  test('Search Spotify for "pokemon"', () async {
     final accessToken = await auth.getSpotifyAccessToken();
     expect(accessToken, isNotNull, reason: 'Failed to get the Spotify access token.');
 
@@ -14,5 +16,10 @@ void main() {
 
     final retrievedToken = await storage.retrieveToken();
     expect(retrievedToken, isNotNull, reason: 'Failed to retrieve the token from storage.');
+
+    final searchResponse = await spotifyQuery.search('pokemon', retrievedToken!);
+    print(searchResponse);
+    expect(searchResponse, isNotNull, reason: 'Failed to search on Spotify.');
+    expect(searchResponse, isNot('Failed to load Webpage'), reason: 'Error response from Spotify.');
   });
 }
