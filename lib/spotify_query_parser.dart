@@ -13,7 +13,9 @@ class SpotifyQueryParser {
         decoded['tracks']['items'] != null &&
         decoded['tracks']['items'].isNotEmpty) {
       for (var trackItem in decoded['tracks']['items']) {
-        tracks.add(Track(trackItem['name'], trackItem['href']));
+        String name = trackItem['name'];
+        String href = trackItem['external_urls']['spotify'];
+        tracks.add(Track(name, href));
       }
     }
 
