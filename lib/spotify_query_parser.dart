@@ -13,7 +13,7 @@ class SpotifyQueryParser {
         decoded['tracks']['items'] != null &&
         decoded['tracks']['items'].isNotEmpty) {
       for (var trackItem in decoded['tracks']['items']) {
-        tracks.add(Track(trackItem['name']));
+        tracks.add(Track(trackItem['name'], trackItem['href']));
       }
     }
 
