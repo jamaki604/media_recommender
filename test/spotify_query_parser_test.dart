@@ -13,7 +13,7 @@ void main() {
     final result = parser.parseJson(string);
 
     result.tracks.asMap().forEach((index, track) {
-      print('${index + 1}. ${track.name}');
+      print('${index + 1}. ${track.name} - ${track.href}');
     });
 
     expect(result.tracks[0].name, 'Pokémon Theme');
