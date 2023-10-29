@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:media_recommender/parse_results.dart';
+import 'package:media_recommender/spotify_authorization.dart';
 import 'package:media_recommender/spotify_query_parser.dart';
+import 'package:media_recommender/spotify_query_updater.dart';
 import 'package:media_recommender/track.dart';
-
+import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,49 +36,70 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String displayedText = '';
+  List<Track> tracksList = [];
   final trackController = TextEditingController();
   final spotifyQueryParser = SpotifyQueryParser();
+  final auth = SpotifyAuthorization();
+  final spotifyQuery = SpotifyQueryUpdater();
   bool isLoading = false;
 
   Future<void> handleButtonPress() async {
     setState(() {
       isLoading = true;
-      displayedText = '';
+      tracksList = [];
     });
 
     try {
-      final result = await fetchTracks();
+      final result = await fetchTracks(trackController.text);
       setState(() {
-        if (result.tracks.isEmpty) {
-          displayedText = "No tracks found.";
-        } else {
-          displayedText = formatTracks(result.tracks);
-        }
+        tracksList = result.tracks.take(10).toList();  // Limiting the number of tracks to 10.
         isLoading = false;
       });
     } catch (error) {
       setState(() {
-        displayedText = "An error occurred: $error";
         isLoading = false;
       });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('An error occurred: $error')),
+      );
     }
   }
 
-  String formatTracks(List<Track> tracks) {
-    final int length = tracks.length > 10 ? 10 : tracks.length;
-    String result = '';
-    for (int i = 0; i < length; i++) {
-      result += "${i + 1}. ${tracks[i].name}\n";
+  Future<ParseResult> fetchTracks(String searchTerm) async {
+    final accessToken = await auth.getSpotifyAccessToken();
+    if (accessToken == null) {
+      throw Exception('Failed to get the Spotify access token.');
     }
-    return result;
+
+    final jsonResponse = await spotifyQuery.search(searchTerm, accessToken);
+    return spotifyQueryParser.parseJson(jsonResponse);
   }
 
-  Future<ParseResult> fetchTracks() async {
-    // Here, you'd use the trackController.text to fetch JSON data from the Spotify API.
-    // For now, I'll use a dummy json string to mimic that process.
-    final dummyJsonData = '{"tracks": {"items": [{"name": "Track 1"}, {"name": "Track 2"}, ...]}}'; // ... represents the other dummy tracks.
-    return spotifyQueryParser.parseJson(dummyJsonData);
+  Widget buildTrackList(List<Track> tracks) {
+    return Column(
+      children: tracks.asMap().entries.map((entry) => buildTrack(entry.key, entry.value)).toList(),
+    );
+  }
+
+  Widget buildTrack(int index, Track track) {
+    return InkWell(
+      onTap: () async {
+        if (await canLaunchUrlString(track.href)) {
+          await launchUrlString(track.href);
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Could not launch URL')),
+          );
+        }
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8.0),
+        child: Text(
+          "${index + 1}. ${track.name}",  // Displaying the track number.
+          style: const TextStyle(fontSize: 24, color: Colors.blue, decoration: TextDecoration.underline),
+        ),
+      ),
+    );
   }
 
   @override
@@ -110,6 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   controller: trackController,
                   keyboardType: TextInputType.text,
                   enabled: !isLoading,
+                  onSubmitted: (value) => handleButtonPress(),
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: "Search term goes here",
@@ -122,13 +146,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: isLoading ? null : handleButtonPress,
                 child: const Text('Submit'),
               ),
-              Container(
-                padding: const EdgeInsets.all(10),
-                child: Text(
-                  displayedText,
-                  style: const TextStyle(fontSize: 24),
-                ),
+              isLoading
+                  ? const CircularProgressIndicator()
+                  : tracksList.isEmpty
+                  ? const Padding(
+                padding: EdgeInsets.all(10),
+                child: Text('No search results.', style: TextStyle(fontSize: 24)),
               )
+                  : Container(
+                padding: const EdgeInsets.all(10),
+                child: buildTrackList(tracksList),
+              ),
             ],
           ),
         ),
