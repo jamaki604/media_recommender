@@ -1,0 +1,156 @@
+{
+  "audiobooks": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=audiobook&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=audiobook&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 42,
+    "items": [
+      {
+        "authors": [
+          {
+            "name": "Merlin Mill"
+          }
+        ],
+        "copyrights": [],
+        "description": "Author(s): Merlin Mill\nNarrator(s): Merlin Mill\n\nDid you know that the original Pokémon Gold and Silver were intended to be the last games in the series until the CEO decided to gamble on just one more generation? Or that Pokémon Go broke five Guinness World Records within a month of its release? Do you know which two starter Pokémon are the only ones with dual typing? Or in which regions the starter Pokémon stay pure to their type through each evolution? This fascinating audiobook contains over 100 amazing facts about Pokémon, with chapters including the games, the movies, statistics and so much more. So whether you’re the world’s biggest Poké-fan or you are completely new to the franchise, this is the perfect addition to your audiobook collection.",
+        "html_description": "Author(s): Merlin Mill<br/>Narrator(s): Merlin Mill<br/>Did you know that the original Pokémon Gold and Silver were intended to be the last games in the series until the CEO decided to gamble on just one more generation? Or that Pokémon Go broke five Guinness World Records within a month of its release? Do you know which two starter Pokémon are the only ones with dual typing? Or in which regions the starter Pokémon stay pure to their type through each evolution? This fascinating audiobook contains over 100 amazing facts about Pokémon, with chapters including the games, the movies, statistics and so much more. So whether you’re the world’s biggest Poké-fan or you are completely new to the franchise, this is the perfect addition to your audiobook collection.",
+        "edition": "Unabridged",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/7rGqXbTL17NtGNUzCt4UBG"
+        },
+        "href": "https://api.spotify.com/v1/audiobooks/7rGqXbTL17NtGNUzCt4UBG",
+        "id": "7rGqXbTL17NtGNUzCt4UBG",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab676663000022a87c940b09073ead280b984d44",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000db5b7c940b09073ead280b984d44",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000703b7c940b09073ead280b984d44",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "languages": ["English"],
+        "media_type": "audio",
+        "name": "101 Amazing Facts About Pokémon",
+        "narrators": [
+          {
+            "name": "Merlin Mill"
+          }
+        ],
+        "publisher": "Andrews UK",
+        "type": "audiobook",
+        "uri": "spotify:show:7rGqXbTL17NtGNUzCt4UBG",
+        "total_chapters": 14,
+        "is_externally_hosted": false
+      },
+      {
+        "authors": [
+          {
+            "name": "Anthony Bean, PhD"
+          }
+        ],
+        "copyrights": [],
+        "description": "Author(s): Anthony Bean, PhD\nNarrator(s): Erik Lawrence\n\n<p><strong><em>“I see now that the circumstances of one’s birth are irrelevant. It is what you do with the gift of life that determines who you are.” –</em> Mewtwo, <em>Pokemon: The First Movie.</em></strong></p><p>For more than two decades, Ash Ketchum, has been chasing his dream of becoming a Pokémon Master. His personal journey spans more than and 1,000 television episodes, 22 films, 122 <em>Pokémon </em>games (as of fall of 2021), discovering over 800 different species of Pokémon, numerous card games, and other merchandise children of the 90s still treasure today. </p><p><em>The Psychology of Pokémon</em> guides gamers on a real-world quest of self-discovery so that they can Catch ‘em All. And, as part of this examination, psychologists, clinicians, video game researchers, professors, and enthusiasts unravel the mysteries of the Pokémon series by asking:</p><p>·        Why is the Pokémon series so beloved by everyone even after we have grown up?</p><p>·        What is the reason we trust a 10-year-old to accomplish the mission to become a Pokémon master and how does this affect our own sense of childhood?</p><p>·        What can we take away from our own journey of the Pokémon series and its impact on catching them all?</p><p>·        How can Ash Ketchum's perseverance and resilience teach us about Grit in the face of adversity?</p><p>·        Why was 'Twitch Plays Pokémon' such an inspiration to us all?</p><br /><p> </p><p>Think you know <em>Pokémon</em>? <em>The Psychology of Pokémon</em> explores how the game resonates with a player's psychological drive toward an emotional sense of wholeness, bonding, and completion as they take part in this epic quest.</p>",
+        "html_description": "Author(s): Anthony Bean, PhD<br/>Narrator(s): Erik Lawrence<br/>&lt;p&gt;&lt;strong&gt;&lt;em&gt;“I see now that the circumstances of one’s birth are irrelevant. It is what you do with the gift of life that determines who you are.” –&lt;/em&gt; Mewtwo, &lt;em&gt;Pokemon: The First Movie.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;For more than two decades, Ash Ketchum, has been chasing his dream of becoming a Pokémon Master. His personal journey spans more than and 1,000 television episodes, 22 films, 122 &lt;em&gt;Pokémon &lt;/em&gt;games (as of fall of 2021), discovering over 800 different species of Pokémon, numerous card games, and other merchandise children of the 90s still treasure today. &lt;/p&gt;&lt;p&gt;&lt;em&gt;The Psychology of Pokémon&lt;/em&gt; guides gamers on a real-world quest of self-discovery so that they can Catch ‘em All. And, as part of this examination, psychologists, clinicians, video game researchers, professors, and enthusiasts unravel the mysteries of the Pokémon series by asking:&lt;/p&gt;&lt;p&gt;·        Why is the Pokémon series so beloved by everyone even after we have grown up?&lt;/p&gt;&lt;p&gt;·        What is the reason we trust a 10-year-old to accomplish the mission to become a Pokémon master and how does this affect our own sense of childhood?&lt;/p&gt;&lt;p&gt;·        What can we take away from our own journey of the Pokémon series and its impact on catching them all?&lt;/p&gt;&lt;p&gt;·        How can Ash Ketchum&#39;s perseverance and resilience teach us about Grit in the face of adversity?&lt;/p&gt;&lt;p&gt;·        Why was &#39;Twitch Plays Pokémon&#39; such an inspiration to us all?&lt;/p&gt;&lt;br /&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;Think you know &lt;em&gt;Pokémon&lt;/em&gt;? &lt;em&gt;The Psychology of Pokémon&lt;/em&gt; explores how the game resonates with a player&#39;s psychological drive toward an emotional sense of wholeness, bonding, and completion as they take part in this epic quest.&lt;/p&gt;",
+        "edition": "Unabridged",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/2oQ0AOGSfTw6DseuDpNwDj"
+        },
+        "href": "https://api.spotify.com/v1/audiobooks/2oQ0AOGSfTw6DseuDpNwDj",
+        "id": "2oQ0AOGSfTw6DseuDpNwDj",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab676663000022a8ec0b9995ef10a408ff4338d3",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000db5bec0b9995ef10a408ff4338d3",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000703bec0b9995ef10a408ff4338d3",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "languages": ["English"],
+        "media_type": "audio",
+        "name": "The Psychology of Pokemon: The Power to Catch 'Em All",
+        "narrators": [
+          {
+            "name": "Erik Lawrence"
+          }
+        ],
+        "publisher": "Leyline Publishing",
+        "type": "audiobook",
+        "uri": "spotify:show:2oQ0AOGSfTw6DseuDpNwDj",
+        "total_chapters": 22,
+        "is_externally_hosted": false
+      },
+      {
+        "authors": [
+          {
+            "name": "HowExpert"
+          },
+          {
+            "name": "Brian Metz"
+          }
+        ],
+        "copyrights": [],
+        "description": "Author(s): HowExpert, Brian Metz\nNarrator(s): Eddie Leonard Jr.\n\n<p>Brian Metz has been a fan of Pokemon since age 10. He can even sing the Pokerap! He first played <em>Pokemon Red</em>, and, after putting well over a hundred hours into the game, he played <em>Pokemon Gold</em>. Ever since his first time playing Pokemon, he has wondered what it would be like to catch Pokemon in the real world. On July 6, 2016, he downloaded <em>Pokemon Go</em> and began life as a real life Pokemon trainer. Just like the Pokemon stories, he's met new friends and seen new places while chasing or battling new Pokemon, all without spending a penny.</p><p><em>Pokemon Go</em> is a free-to-play app produced by Niantic. Of course, Niantic would love for you to spend all of your money in the game. Thankfully, you don't have to pay a dime in order to play and enjoy this game. In this helpful guide, you will learn the basics of playing <em>Pokemon Go</em>, from how to catch Pokemon to understanding the bonus XP system, as well as how to earn Pokecoins for free in order to buy items. You will even learn what to spend those hard earned Pokecoins on, what Pokemon types mean for your gym battles, and how to understand a Pokemon's hidden stats. Whether you are just a beginner or an experienced player, this guide explains the intricacies of <em>Pokemon Go</em> and shows you how to make the most of it without spending any money. With tips to make the most of your items and strategies for leveling up quickly, this how-to book will send you straight to life as a Pokemon Master!</p><br /><p>HowExpert publishes quick 'how to' guides on all topics from A to Z by everyday experts.</p>",
+        "html_description": "Author(s): HowExpert, Brian Metz<br/>Narrator(s): Eddie Leonard Jr.<br/>&lt;p&gt;Brian Metz has been a fan of Pokemon since age 10. He can even sing the Pokerap! He first played &lt;em&gt;Pokemon Red&lt;/em&gt;, and, after putting well over a hundred hours into the game, he played &lt;em&gt;Pokemon Gold&lt;/em&gt;. Ever since his first time playing Pokemon, he has wondered what it would be like to catch Pokemon in the real world. On July 6, 2016, he downloaded &lt;em&gt;Pokemon Go&lt;/em&gt; and began life as a real life Pokemon trainer. Just like the Pokemon stories, he&#39;s met new friends and seen new places while chasing or battling new Pokemon, all without spending a penny.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Pokemon Go&lt;/em&gt; is a free-to-play app produced by Niantic. Of course, Niantic would love for you to spend all of your money in the game. Thankfully, you don&#39;t have to pay a dime in order to play and enjoy this game. In this helpful guide, you will learn the basics of playing &lt;em&gt;Pokemon Go&lt;/em&gt;, from how to catch Pokemon to understanding the bonus XP system, as well as how to earn Pokecoins for free in order to buy items. You will even learn what to spend those hard earned Pokecoins on, what Pokemon types mean for your gym battles, and how to understand a Pokemon&#39;s hidden stats. Whether you are just a beginner or an experienced player, this guide explains the intricacies of &lt;em&gt;Pokemon Go&lt;/em&gt; and shows you how to make the most of it without spending any money. With tips to make the most of your items and strategies for leveling up quickly, this how-to book will send you straight to life as a Pokemon Master!&lt;/p&gt;&lt;br /&gt;&lt;p&gt;HowExpert publishes quick &#39;how to&#39; guides on all topics from A to Z by everyday experts.&lt;/p&gt;",
+        "edition": "Unabridged",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/6ioQkvudw0tLvglesHXqtx"
+        },
+        "href": "https://api.spotify.com/v1/audiobooks/6ioQkvudw0tLvglesHXqtx",
+        "id": "6ioQkvudw0tLvglesHXqtx",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab676663000022a81154050f8880ce48379d22c7",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000db5b1154050f8880ce48379d22c7",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000703b1154050f8880ce48379d22c7",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "languages": ["English"],
+        "media_type": "audio",
+        "name": "How To Play Pokemon Go With Little To No Budget",
+        "narrators": [
+          {
+            "name": "Eddie Leonard Jr."
+          }
+        ],
+        "publisher": "HowExpert",
+        "type": "audiobook",
+        "uri": "spotify:show:6ioQkvudw0tLvglesHXqtx",
+        "total_chapters": 10,
+        "is_externally_hosted": false
+      }
+    ]
+  }
+}

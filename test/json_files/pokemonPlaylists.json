@@ -1,0 +1,120 @@
+{
+  "playlists": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=playlist&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=playlist&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 358,
+    "items": [
+      {
+        "collaborative": false,
+        "description": "If you like this playlist then go check out my profile (scyther) and check out my other playlists!. And please follow me if you can And please like this playlist and please like ZELDA BOSS THEMES. Also, I’m not liking Pokémon ",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/6gTxOB9e1XlceXELVyMqiL"
+        },
+        "href": "https://api.spotify.com/v1/playlists/6gTxOB9e1XlceXELVyMqiL",
+        "id": "6gTxOB9e1XlceXELVyMqiL",
+        "images": [
+          {
+            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb718a3b5746672771666bd738",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Official Pokémon Songs",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/0u75c06i8v1une6du5wwifgdp"
+          },
+          "href": "https://api.spotify.com/v1/users/0u75c06i8v1une6du5wwifgdp",
+          "id": "0u75c06i8v1une6du5wwifgdp",
+          "type": "user",
+          "uri": "spotify:user:0u75c06i8v1une6du5wwifgdp",
+          "display_name": "Me"
+        },
+        "public": null,
+        "snapshot_id": "OTMsZjc0OTBjMjkxOWM1MjcxMTdjYjU5YjhiYzBkMTZjMTZlZTYyZjA2Yg==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/6gTxOB9e1XlceXELVyMqiL/tracks",
+          "total": 80
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:6gTxOB9e1XlceXELVyMqiL",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "Lofi hiphop beats to study&#x2F; battle to &lt;song suggestions reddit: &#x2F;u&#x2F;poketopa1234&gt;",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/59OrkYvGv0oM1KgPABU7nw"
+        },
+        "href": "https://api.spotify.com/v1/playlists/59OrkYvGv0oM1KgPABU7nw",
+        "id": "59OrkYvGv0oM1KgPABU7nw",
+        "images": [
+          {
+            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebbed3c7903ce40dacfe5ac351b",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Pokémon Lofi 🍃",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/poketopa1234"
+          },
+          "href": "https://api.spotify.com/v1/users/poketopa1234",
+          "id": "poketopa1234",
+          "type": "user",
+          "uri": "spotify:user:poketopa1234",
+          "display_name": "poketopa"
+        },
+        "public": null,
+        "snapshot_id": "MTY1NCxlYzI0MjkwOTFkNWQ3ZjMyNWM3MjkzNDA2YjZhYTJlN2YxMmZjOGI0",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/59OrkYvGv0oM1KgPABU7nw/tracks",
+          "total": 2129
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:59OrkYvGv0oM1KgPABU7nw",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "Art: Itzah - Red and Blue - Yellow - Gold and Silver - Crystal - Ruby and Sapphire - FireRed and LeafGreen - Emerald - Diamond and Pearl - Platinum - HeartGold and SoulSilver - Black and White - Black 2 and White 2 - X and Y - Omega Ruby and Alpha Sapphire - Sun and Moon - Ultra Sun and Ultra Moon",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/28BE3XWhDJdnAGKybZIJPK"
+        },
+        "href": "https://api.spotify.com/v1/playlists/28BE3XWhDJdnAGKybZIJPK",
+        "id": "28BE3XWhDJdnAGKybZIJPK",
+        "images": [
+          {
+            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebbd67aec7f225b8b44962833cf",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Pokémon Lofi and Chill (2023)",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/22nlgavvwt4bqsudzlihllhoy"
+          },
+          "href": "https://api.spotify.com/v1/users/22nlgavvwt4bqsudzlihllhoy",
+          "id": "22nlgavvwt4bqsudzlihllhoy",
+          "type": "user",
+          "uri": "spotify:user:22nlgavvwt4bqsudzlihllhoy",
+          "display_name": "Chillout Arcade"
+        },
+        "public": null,
+        "snapshot_id": "MTg2LDUwY2ViMDlhM2FmYzhlYmZkMDcxZmNmNzhkOTQwMmFmMjYzMDZkNjE=",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/28BE3XWhDJdnAGKybZIJPK/tracks",
+          "total": 286
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:28BE3XWhDJdnAGKybZIJPK",
+        "primary_color": null
+      }
+    ]
+  }
+}

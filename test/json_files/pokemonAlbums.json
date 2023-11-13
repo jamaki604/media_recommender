@@ -1,0 +1,154 @@
+{
+  "albums": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=album&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=album&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 814,
+    "items": [
+      {
+        "album_type": "album",
+        "total_tracks": 13,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4R0boGQyiCUt3i7pAKCitR"
+        },
+        "href": "https://api.spotify.com/v1/albums/4R0boGQyiCUt3i7pAKCitR",
+        "id": "4R0boGQyiCUt3i7pAKCitR",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d0000b273b26ee3ea08f1e5d8dffbab4b",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d00001e02b26ee3ea08f1e5d8dffbab4b",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d00004851b26ee3ea08f1e5d8dffbab4b",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "name": "Pokemon - 2.b.a. Master - Music From The Hit Tv Series",
+        "release_date": "1999-06-29",
+        "release_date_precision": "day",
+        "type": "album",
+        "uri": "spotify:album:4R0boGQyiCUt3i7pAKCitR",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "is_playable": true
+      },
+      {
+        "album_type": "album",
+        "total_tracks": 13,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1dOfp0HyYftdtpf5l50EIK"
+        },
+        "href": "https://api.spotify.com/v1/albums/1dOfp0HyYftdtpf5l50EIK",
+        "id": "1dOfp0HyYftdtpf5l50EIK",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d0000b2735dc48545a240d89890b836f3",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d00001e025dc48545a240d89890b836f3",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d000048515dc48545a240d89890b836f3",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "name": "Pokemon X - Ten Years Of Pokemon",
+        "release_date": "2007-03-27",
+        "release_date_precision": "day",
+        "type": "album",
+        "uri": "spotify:album:1dOfp0HyYftdtpf5l50EIK",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "is_playable": true
+      },
+      {
+        "album_type": "album",
+        "total_tracks": 16,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4lBMa9JEuCSIs3NkPEIwvN"
+        },
+        "href": "https://api.spotify.com/v1/albums/4lBMa9JEuCSIs3NkPEIwvN",
+        "id": "4lBMa9JEuCSIs3NkPEIwvN",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d0000b2735557509707f246b85561cd6a",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d00001e025557509707f246b85561cd6a",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d000048515557509707f246b85561cd6a",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "name": "Poké & Chill",
+        "release_date": "2019-08-16",
+        "release_date_precision": "day",
+        "type": "album",
+        "uri": "spotify:album:4lBMa9JEuCSIs3NkPEIwvN",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5MboRLcEpLbsshOx64OdA6"
+            },
+            "href": "https://api.spotify.com/v1/artists/5MboRLcEpLbsshOx64OdA6",
+            "id": "5MboRLcEpLbsshOx64OdA6",
+            "name": "Mikel",
+            "type": "artist",
+            "uri": "spotify:artist:5MboRLcEpLbsshOx64OdA6"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1T7zBkQCOCacKjbnmFX7cp"
+            },
+            "href": "https://api.spotify.com/v1/artists/1T7zBkQCOCacKjbnmFX7cp",
+            "id": "1T7zBkQCOCacKjbnmFX7cp",
+            "name": "GameChops",
+            "type": "artist",
+            "uri": "spotify:artist:1T7zBkQCOCacKjbnmFX7cp"
+          }
+        ],
+        "is_playable": true
+      }
+    ]
+  }
+}

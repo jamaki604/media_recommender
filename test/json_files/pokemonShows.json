@@ -1,0 +1,123 @@
+{
+  "shows": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=show&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=show&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 246,
+    "items": [
+      {
+        "available_markets": ["AD", "AE", "AG", "AL", "AM", "AR", "AT", "AU", "BA", "BB", "BE", "BF", "BG", "BH", "BJ", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CH", "CL", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GB", "GD", "GE", "GH", "GM", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KI", "KN", "KR", "KW", "LB", "LC", "LI", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "ME", "MG", "MH", "MK", "ML", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "UA", "US", "UY", "VC", "VN", "VU", "WS", "XK", "ZA"],
+        "copyrights": [],
+        "description": "A Pokemon-inspired tabletop roleplaying game based in 1920s' Kanto. Organized crime and political unrest is plaguing the region. In a region in chaos, who will bring the region back into a peaceful era?",
+        "html_description": "A Pokemon-inspired tabletop roleplaying game based in 1920s&#39; Kanto. Organized crime and political unrest is plaguing the region. In a region in chaos, who will bring the region back into a peaceful era?",
+        "explicit": true,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/6Doi3wjvCyvP98pEOfipDI"
+        },
+        "href": "https://api.spotify.com/v1/shows/6Doi3wjvCyvP98pEOfipDI",
+        "id": "6Doi3wjvCyvP98pEOfipDI",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab6765630000ba8aeb23623364686e4d00159f79",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67656300005f1feb23623364686e4d00159f79",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6765630000f68deb23623364686e4d00159f79",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "is_externally_hosted": false,
+        "languages": ["en-US"],
+        "media_type": "audio",
+        "name": "The Roaring Trainers",
+        "publisher": "The Roaring Trainers",
+        "type": "show",
+        "uri": "spotify:show:6Doi3wjvCyvP98pEOfipDI",
+        "total_episodes": 125
+      },
+      {
+        "available_markets": ["AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KH", "KI", "KM", "KN", "KW", "LA", "LB", "LC", "LI", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW"],
+        "copyrights": [],
+        "description": "It's Super Effective is a weekly Pokémon podcast that covers news and information on Pokémon GO, the Pokémon anime, and the video games (such as Pokemon Scarlet & Pokémon Violet, as well as, Pokémon UNITE and Masters EX). The podcast also talks about battling, Shiny Hunting, the Pokémon TCG, Pokémon merchandise and more! While the show is mostly news focused, we cover listener e-mails, and in-depth Pokémon trivia! It's Super Effective is an award-winning podcast and one of the most downloaded Pokémon-based podcasts on the web. It's Super Effective is dedicated to bringing unique, creative Pokémon content on the internet.",
+        "html_description": "It&#39;s Super Effective is a weekly Pokémon podcast that covers news and information on Pokémon GO, the Pokémon anime, and the video games (such as Pokemon Scarlet &amp; Pokémon Violet, as well as, Pokémon UNITE and Masters EX). The podcast also talks about battling, Shiny Hunting, the Pokémon TCG, Pokémon merchandise and more! While the show is mostly news focused, we cover listener e-mails, and in-depth Pokémon trivia! It&#39;s Super Effective is an award-winning podcast and one of the most downloaded Pokémon-based podcasts on the web. It&#39;s Super Effective is dedicated to bringing unique, creative Pokémon content on the internet.",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/3LwK4Rmg3Nr5P6QjCFxx1T"
+        },
+        "href": "https://api.spotify.com/v1/shows/3LwK4Rmg3Nr5P6QjCFxx1T",
+        "id": "3LwK4Rmg3Nr5P6QjCFxx1T",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/623850e2572336575499a9d1d0e365b45f55148c",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/1b21d6c01d58c623da257afad73df8433e69273c",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/d474d93c9f5cac381d39b477ad3fe829b2452db1",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "is_externally_hosted": false,
+        "languages": ["en"],
+        "media_type": "audio",
+        "name": "It's Super Effective: A Pokemon Podcast",
+        "publisher": "PKMNcast.com",
+        "type": "show",
+        "uri": "spotify:show:3LwK4Rmg3Nr5P6QjCFxx1T",
+        "total_episodes": 562
+      },
+      {
+        "available_markets": ["AD", "AE", "AG", "AL", "AM", "AR", "AT", "AU", "BA", "BB", "BE", "BF", "BG", "BH", "BJ", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CH", "CL", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GB", "GD", "GE", "GH", "GM", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KI", "KN", "KR", "KW", "LB", "LC", "LI", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "ME", "MG", "MH", "MK", "ML", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "UA", "US", "UY", "VC", "VN", "VU", "WS", "XK", "ZA"],
+        "copyrights": [],
+        "description": "The podcast version of Boarding Party's Pokemon DnD Campaign on YouTube! Support this podcast: https://podcasters.spotify.com/pod/show/boarding-party/support",
+        "html_description": "The podcast version of Boarding Party&#39;s Pokemon DnD Campaign on YouTube! Support this podcast: <a href=\"https://podcasters.spotify.com/pod/show/boarding-party/support\" rel=\"nofollow\">https://podcasters.spotify.com/pod/show/boarding-party/support</a>",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/1PpzUPjgJjdpvYHX0QS9oH"
+        },
+        "href": "https://api.spotify.com/v1/shows/1PpzUPjgJjdpvYHX0QS9oH",
+        "id": "1PpzUPjgJjdpvYHX0QS9oH",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab6765630000ba8a658082583ae8fc915411e73e",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67656300005f1f658082583ae8fc915411e73e",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6765630000f68d658082583ae8fc915411e73e",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "is_externally_hosted": false,
+        "languages": ["en"],
+        "media_type": "audio",
+        "name": "Boarding Party's Pokemon DnD",
+        "publisher": "Boarding Party",
+        "type": "show",
+        "uri": "spotify:show:1PpzUPjgJjdpvYHX0QS9oH",
+        "total_episodes": 238
+      }
+    ]
+  }
+}

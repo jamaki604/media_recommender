@@ -1,0 +1,1021 @@
+{
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=track&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=track&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 832,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "total_tracks": 13,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4R0boGQyiCUt3i7pAKCitR"
+          },
+          "href": "https://api.spotify.com/v1/albums/4R0boGQyiCUt3i7pAKCitR",
+          "id": "4R0boGQyiCUt3i7pAKCitR",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b273b26ee3ea08f1e5d8dffbab4b",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02b26ee3ea08f1e5d8dffbab4b",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00004851b26ee3ea08f1e5d8dffbab4b",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Pokemon - 2.b.a. Master - Music From The Hit Tv Series",
+          "release_date": "1999-06-29",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:4R0boGQyiCUt3i7pAKCitR",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+              },
+              "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+              "id": "6goK4KMSdP4A8lw8jk4ADk",
+              "name": "Pokémon",
+              "type": "artist",
+              "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 198186,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USKO10406205"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3OIHgTyQdiAGMmpjQaNxp3"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3OIHgTyQdiAGMmpjQaNxp3",
+        "id": "3OIHgTyQdiAGMmpjQaNxp3",
+        "is_playable": true,
+        "name": "Pokémon Theme",
+        "popularity": 65,
+        "preview_url": "https://p.scdn.co/mp3-preview/2396b4e9ba3b301c76b2fa6da5d38d046eab658c?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:3OIHgTyQdiAGMmpjQaNxp3",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "total_tracks": 13,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4R0boGQyiCUt3i7pAKCitR"
+          },
+          "href": "https://api.spotify.com/v1/albums/4R0boGQyiCUt3i7pAKCitR",
+          "id": "4R0boGQyiCUt3i7pAKCitR",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b273b26ee3ea08f1e5d8dffbab4b",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02b26ee3ea08f1e5d8dffbab4b",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00004851b26ee3ea08f1e5d8dffbab4b",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Pokemon - 2.b.a. Master - Music From The Hit Tv Series",
+          "release_date": "1999-06-29",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:4R0boGQyiCUt3i7pAKCitR",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+              },
+              "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+              "id": "6goK4KMSdP4A8lw8jk4ADk",
+              "name": "Pokémon",
+              "type": "artist",
+              "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 183053,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USKO10406216"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0FIJvfMOjEZhSs5hTObtKP"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0FIJvfMOjEZhSs5hTObtKP",
+        "id": "0FIJvfMOjEZhSs5hTObtKP",
+        "is_playable": true,
+        "name": "Pokérap",
+        "popularity": 53,
+        "preview_url": "https://p.scdn.co/mp3-preview/120b2d049217a7dc3ba66000b2fffb0d9971bdb2?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 12,
+        "type": "track",
+        "uri": "spotify:track:0FIJvfMOjEZhSs5hTObtKP",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "total_tracks": 20,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2ztCJz2gwfKnjwuyKBbcqZ"
+          },
+          "href": "https://api.spotify.com/v1/albums/2ztCJz2gwfKnjwuyKBbcqZ",
+          "id": "2ztCJz2gwfKnjwuyKBbcqZ",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b273ff662f0affe1a5420d3d6b81",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02ff662f0affe1a5420d3d6b81",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00004851ff662f0affe1a5420d3d6b81",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Sleep Anime Lofi Beats",
+          "release_date": "2021-09-17",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:2ztCJz2gwfKnjwuyKBbcqZ",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3yTNaLgtCufxUYDsWa5MpA"
+              },
+              "href": "https://api.spotify.com/v1/artists/3yTNaLgtCufxUYDsWa5MpA",
+              "id": "3yTNaLgtCufxUYDsWa5MpA",
+              "name": "Kato",
+              "type": "artist",
+              "uri": "spotify:artist:3yTNaLgtCufxUYDsWa5MpA"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3yTNaLgtCufxUYDsWa5MpA"
+            },
+            "href": "https://api.spotify.com/v1/artists/3yTNaLgtCufxUYDsWa5MpA",
+            "id": "3yTNaLgtCufxUYDsWa5MpA",
+            "name": "Kato",
+            "type": "artist",
+            "uri": "spotify:artist:3yTNaLgtCufxUYDsWa5MpA"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 80570,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "CH7812100575"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/59dMMxNmcPXPKa4S0vYi1j"
+        },
+        "href": "https://api.spotify.com/v1/tracks/59dMMxNmcPXPKa4S0vYi1j",
+        "id": "59dMMxNmcPXPKa4S0vYi1j",
+        "is_playable": true,
+        "name": "Pokémon Theme Lofi",
+        "popularity": 56,
+        "preview_url": "https://p.scdn.co/mp3-preview/9a62bd920ab7d97af93629f617283d88c27e30ea?cid=fec8a2896fe348f4be3f3bbdb2241be1",
+        "track_number": 16,
+        "type": "track",
+        "uri": "spotify:track:59dMMxNmcPXPKa4S0vYi1j",
+        "is_local": false
+      }
+    ]
+  },
+  "artists": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=artist&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=artist&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 39,
+    "items": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+        },
+        "followers": {
+          "href": null,
+          "total": 265204
+        },
+        "genres": ["cartoon", "otacore"],
+        "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+        "id": "6goK4KMSdP4A8lw8jk4ADk",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab6761610000e5eb6eeeda2a79c65f45ed9f80b8",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab676161000051746eeeda2a79c65f45ed9f80b8",
+            "height": 320,
+            "width": 320
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6761610000f1786eeeda2a79c65f45ed9f80b8",
+            "height": 160,
+            "width": 160
+          }
+        ],
+        "name": "Pokémon",
+        "popularity": 51,
+        "type": "artist",
+        "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/30WBsGLsPC446ZG8ifvG8P"
+        },
+        "followers": {
+          "href": null,
+          "total": 12
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/30WBsGLsPC446ZG8ifvG8P",
+        "id": "30WBsGLsPC446ZG8ifvG8P",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d0000b2736012fb706d8f03bc8102d3c0",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d00001e026012fb706d8f03bc8102d3c0",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d000048516012fb706d8f03bc8102d3c0",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "name": "Pokémon",
+        "popularity": 0,
+        "type": "artist",
+        "uri": "spotify:artist:30WBsGLsPC446ZG8ifvG8P"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2yVJCfszl9OlvOhNAsPjZv"
+        },
+        "followers": {
+          "href": null,
+          "total": 387
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/2yVJCfszl9OlvOhNAsPjZv",
+        "id": "2yVJCfszl9OlvOhNAsPjZv",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab6761610000e5eba98168dc539fe0c8f729f6f2",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616100005174a98168dc539fe0c8f729f6f2",
+            "height": 320,
+            "width": 320
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6761610000f178a98168dc539fe0c8f729f6f2",
+            "height": 160,
+            "width": 160
+          }
+        ],
+        "name": "PokemonBagBruh",
+        "popularity": 4,
+        "type": "artist",
+        "uri": "spotify:artist:2yVJCfszl9OlvOhNAsPjZv"
+      }
+    ]
+  },
+  "albums": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=album&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=album&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 815,
+    "items": [
+      {
+        "album_type": "album",
+        "total_tracks": 13,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4R0boGQyiCUt3i7pAKCitR"
+        },
+        "href": "https://api.spotify.com/v1/albums/4R0boGQyiCUt3i7pAKCitR",
+        "id": "4R0boGQyiCUt3i7pAKCitR",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d0000b273b26ee3ea08f1e5d8dffbab4b",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d00001e02b26ee3ea08f1e5d8dffbab4b",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d00004851b26ee3ea08f1e5d8dffbab4b",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "name": "Pokemon - 2.b.a. Master - Music From The Hit Tv Series",
+        "release_date": "1999-06-29",
+        "release_date_precision": "day",
+        "type": "album",
+        "uri": "spotify:album:4R0boGQyiCUt3i7pAKCitR",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "is_playable": true
+      },
+      {
+        "album_type": "album",
+        "total_tracks": 13,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1dOfp0HyYftdtpf5l50EIK"
+        },
+        "href": "https://api.spotify.com/v1/albums/1dOfp0HyYftdtpf5l50EIK",
+        "id": "1dOfp0HyYftdtpf5l50EIK",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d0000b2735dc48545a240d89890b836f3",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d00001e025dc48545a240d89890b836f3",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d000048515dc48545a240d89890b836f3",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "name": "Pokemon X - Ten Years Of Pokemon",
+        "release_date": "2007-03-27",
+        "release_date_precision": "day",
+        "type": "album",
+        "uri": "spotify:album:1dOfp0HyYftdtpf5l50EIK",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6goK4KMSdP4A8lw8jk4ADk"
+            },
+            "href": "https://api.spotify.com/v1/artists/6goK4KMSdP4A8lw8jk4ADk",
+            "id": "6goK4KMSdP4A8lw8jk4ADk",
+            "name": "Pokémon",
+            "type": "artist",
+            "uri": "spotify:artist:6goK4KMSdP4A8lw8jk4ADk"
+          }
+        ],
+        "is_playable": true
+      },
+      {
+        "album_type": "album",
+        "total_tracks": 16,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4lBMa9JEuCSIs3NkPEIwvN"
+        },
+        "href": "https://api.spotify.com/v1/albums/4lBMa9JEuCSIs3NkPEIwvN",
+        "id": "4lBMa9JEuCSIs3NkPEIwvN",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d0000b2735557509707f246b85561cd6a",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d00001e025557509707f246b85561cd6a",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67616d000048515557509707f246b85561cd6a",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "name": "Poké & Chill",
+        "release_date": "2019-08-16",
+        "release_date_precision": "day",
+        "type": "album",
+        "uri": "spotify:album:4lBMa9JEuCSIs3NkPEIwvN",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5MboRLcEpLbsshOx64OdA6"
+            },
+            "href": "https://api.spotify.com/v1/artists/5MboRLcEpLbsshOx64OdA6",
+            "id": "5MboRLcEpLbsshOx64OdA6",
+            "name": "Mikel",
+            "type": "artist",
+            "uri": "spotify:artist:5MboRLcEpLbsshOx64OdA6"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1T7zBkQCOCacKjbnmFX7cp"
+            },
+            "href": "https://api.spotify.com/v1/artists/1T7zBkQCOCacKjbnmFX7cp",
+            "id": "1T7zBkQCOCacKjbnmFX7cp",
+            "name": "GameChops",
+            "type": "artist",
+            "uri": "spotify:artist:1T7zBkQCOCacKjbnmFX7cp"
+          }
+        ],
+        "is_playable": true
+      }
+    ]
+  },
+  "playlists": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=playlist&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=playlist&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 358,
+    "items": [
+      {
+        "collaborative": false,
+        "description": "If you like this playlist then go check out my profile (scyther) and check out my other playlists!. And please follow me if you can And please like this playlist and please like ZELDA BOSS THEMES. Also, I’m not liking Pokémon ",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/6gTxOB9e1XlceXELVyMqiL"
+        },
+        "href": "https://api.spotify.com/v1/playlists/6gTxOB9e1XlceXELVyMqiL",
+        "id": "6gTxOB9e1XlceXELVyMqiL",
+        "images": [
+          {
+            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb718a3b5746672771666bd738",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Official Pokémon Songs",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/0u75c06i8v1une6du5wwifgdp"
+          },
+          "href": "https://api.spotify.com/v1/users/0u75c06i8v1une6du5wwifgdp",
+          "id": "0u75c06i8v1une6du5wwifgdp",
+          "type": "user",
+          "uri": "spotify:user:0u75c06i8v1une6du5wwifgdp",
+          "display_name": "Me"
+        },
+        "public": null,
+        "snapshot_id": "OTMsZjc0OTBjMjkxOWM1MjcxMTdjYjU5YjhiYzBkMTZjMTZlZTYyZjA2Yg==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/6gTxOB9e1XlceXELVyMqiL/tracks",
+          "total": 80
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:6gTxOB9e1XlceXELVyMqiL",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "Lofi hiphop beats to study&#x2F; battle to &lt;song suggestions reddit: &#x2F;u&#x2F;poketopa1234&gt;",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/59OrkYvGv0oM1KgPABU7nw"
+        },
+        "href": "https://api.spotify.com/v1/playlists/59OrkYvGv0oM1KgPABU7nw",
+        "id": "59OrkYvGv0oM1KgPABU7nw",
+        "images": [
+          {
+            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebbed3c7903ce40dacfe5ac351b",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Pokémon Lofi 🍃",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/poketopa1234"
+          },
+          "href": "https://api.spotify.com/v1/users/poketopa1234",
+          "id": "poketopa1234",
+          "type": "user",
+          "uri": "spotify:user:poketopa1234",
+          "display_name": "poketopa"
+        },
+        "public": null,
+        "snapshot_id": "MTY1NCxlYzI0MjkwOTFkNWQ3ZjMyNWM3MjkzNDA2YjZhYTJlN2YxMmZjOGI0",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/59OrkYvGv0oM1KgPABU7nw/tracks",
+          "total": 2129
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:59OrkYvGv0oM1KgPABU7nw",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "Art: Itzah - Red and Blue - Yellow - Gold and Silver - Crystal - Ruby and Sapphire - FireRed and LeafGreen - Emerald - Diamond and Pearl - Platinum - HeartGold and SoulSilver - Black and White - Black 2 and White 2 - X and Y - Omega Ruby and Alpha Sapphire - Sun and Moon - Ultra Sun and Ultra Moon",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/28BE3XWhDJdnAGKybZIJPK"
+        },
+        "href": "https://api.spotify.com/v1/playlists/28BE3XWhDJdnAGKybZIJPK",
+        "id": "28BE3XWhDJdnAGKybZIJPK",
+        "images": [
+          {
+            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebbd67aec7f225b8b44962833cf",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Pokémon Lofi and Chill (2023)",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/22nlgavvwt4bqsudzlihllhoy"
+          },
+          "href": "https://api.spotify.com/v1/users/22nlgavvwt4bqsudzlihllhoy",
+          "id": "22nlgavvwt4bqsudzlihllhoy",
+          "type": "user",
+          "uri": "spotify:user:22nlgavvwt4bqsudzlihllhoy",
+          "display_name": "Chillout Arcade"
+        },
+        "public": null,
+        "snapshot_id": "MTg2LDUwY2ViMDlhM2FmYzhlYmZkMDcxZmNmNzhkOTQwMmFmMjYzMDZkNjE=",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/28BE3XWhDJdnAGKybZIJPK/tracks",
+          "total": 286
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:28BE3XWhDJdnAGKybZIJPK",
+        "primary_color": null
+      }
+    ]
+  },
+  "shows": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=show&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=show&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "available_markets": ["AD", "AE", "AG", "AL", "AM", "AR", "AT", "AU", "BA", "BB", "BE", "BF", "BG", "BH", "BJ", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CH", "CL", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GB", "GD", "GE", "GH", "GM", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KI", "KN", "KR", "KW", "LB", "LC", "LI", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "ME", "MG", "MH", "MK", "ML", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "UA", "US", "UY", "VC", "VN", "VU", "WS", "XK", "ZA"],
+        "copyrights": [],
+        "description": "A Pokemon-inspired tabletop roleplaying game based in 1920s' Kanto. Organized crime and political unrest is plaguing the region. In a region in chaos, who will bring the region back into a peaceful era?",
+        "html_description": "A Pokemon-inspired tabletop roleplaying game based in 1920s&#39; Kanto. Organized crime and political unrest is plaguing the region. In a region in chaos, who will bring the region back into a peaceful era?",
+        "explicit": true,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/6Doi3wjvCyvP98pEOfipDI"
+        },
+        "href": "https://api.spotify.com/v1/shows/6Doi3wjvCyvP98pEOfipDI",
+        "id": "6Doi3wjvCyvP98pEOfipDI",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab6765630000ba8aeb23623364686e4d00159f79",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67656300005f1feb23623364686e4d00159f79",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6765630000f68deb23623364686e4d00159f79",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "is_externally_hosted": false,
+        "languages": ["en-US"],
+        "media_type": "audio",
+        "name": "The Roaring Trainers",
+        "publisher": "The Roaring Trainers",
+        "type": "show",
+        "uri": "spotify:show:6Doi3wjvCyvP98pEOfipDI",
+        "total_episodes": 125
+      },
+      {
+        "available_markets": ["AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KH", "KI", "KM", "KN", "KW", "LA", "LB", "LC", "LI", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW"],
+        "copyrights": [],
+        "description": "It's Super Effective is a weekly Pokémon podcast that covers news and information on Pokémon GO, the Pokémon anime, and the video games (such as Pokemon Scarlet & Pokémon Violet, as well as, Pokémon UNITE and Masters EX). The podcast also talks about battling, Shiny Hunting, the Pokémon TCG, Pokémon merchandise and more! While the show is mostly news focused, we cover listener e-mails, and in-depth Pokémon trivia! It's Super Effective is an award-winning podcast and one of the most downloaded Pokémon-based podcasts on the web. It's Super Effective is dedicated to bringing unique, creative Pokémon content on the internet.",
+        "html_description": "It&#39;s Super Effective is a weekly Pokémon podcast that covers news and information on Pokémon GO, the Pokémon anime, and the video games (such as Pokemon Scarlet &amp; Pokémon Violet, as well as, Pokémon UNITE and Masters EX). The podcast also talks about battling, Shiny Hunting, the Pokémon TCG, Pokémon merchandise and more! While the show is mostly news focused, we cover listener e-mails, and in-depth Pokémon trivia! It&#39;s Super Effective is an award-winning podcast and one of the most downloaded Pokémon-based podcasts on the web. It&#39;s Super Effective is dedicated to bringing unique, creative Pokémon content on the internet.",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/3LwK4Rmg3Nr5P6QjCFxx1T"
+        },
+        "href": "https://api.spotify.com/v1/shows/3LwK4Rmg3Nr5P6QjCFxx1T",
+        "id": "3LwK4Rmg3Nr5P6QjCFxx1T",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/623850e2572336575499a9d1d0e365b45f55148c",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/1b21d6c01d58c623da257afad73df8433e69273c",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/d474d93c9f5cac381d39b477ad3fe829b2452db1",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "is_externally_hosted": false,
+        "languages": ["en"],
+        "media_type": "audio",
+        "name": "It's Super Effective: A Pokemon Podcast",
+        "publisher": "PKMNcast.com",
+        "type": "show",
+        "uri": "spotify:show:3LwK4Rmg3Nr5P6QjCFxx1T",
+        "total_episodes": 562
+      },
+      {
+        "available_markets": ["AD", "AE", "AG", "AL", "AM", "AR", "AT", "AU", "BA", "BB", "BE", "BF", "BG", "BH", "BJ", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CH", "CL", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GB", "GD", "GE", "GH", "GM", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KI", "KN", "KR", "KW", "LB", "LC", "LI", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "ME", "MG", "MH", "MK", "ML", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "UA", "US", "UY", "VC", "VN", "VU", "WS", "XK", "ZA"],
+        "copyrights": [],
+        "description": "The podcast version of Boarding Party's Pokemon DnD Campaign on YouTube! Support this podcast: https://podcasters.spotify.com/pod/show/boarding-party/support",
+        "html_description": "The podcast version of Boarding Party&#39;s Pokemon DnD Campaign on YouTube! Support this podcast: <a href=\"https://podcasters.spotify.com/pod/show/boarding-party/support\" rel=\"nofollow\">https://podcasters.spotify.com/pod/show/boarding-party/support</a>",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/1PpzUPjgJjdpvYHX0QS9oH"
+        },
+        "href": "https://api.spotify.com/v1/shows/1PpzUPjgJjdpvYHX0QS9oH",
+        "id": "1PpzUPjgJjdpvYHX0QS9oH",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab6765630000ba8a658082583ae8fc915411e73e",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67656300005f1f658082583ae8fc915411e73e",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6765630000f68d658082583ae8fc915411e73e",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "is_externally_hosted": false,
+        "languages": ["en"],
+        "media_type": "audio",
+        "name": "Boarding Party's Pokemon DnD",
+        "publisher": "Boarding Party",
+        "type": "show",
+        "uri": "spotify:show:1PpzUPjgJjdpvYHX0QS9oH",
+        "total_episodes": 238
+      }
+    ]
+  },
+  "episodes": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=episode&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=episode&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/5M6IQInH0saUVCn8Gk4zSu/clip_1758850_1819100.mp3",
+        "description": "Pikachu and Ash await! - Love, Mrs. Honeybee ❤️🐝😊 💖 Want more Bedtime Stories?💖 Join the Honeybee Library!💖 HoneybeeLibrary.comLISTEN TO:- Hundreds of exclusive Bedtime Stories- Longer Bedtime Stories- No AdvertisementsJoin my Private Podcast & listen with your favorite podcast app!HoneybeeLibrary.com____________________Request a story: https://bit.ly/3nmr7VS ____________________My name is Mrs. Honeybee and my mission is to make bedtime easier! 😊💕 I write bedtime stories inspired by movies & video games that I love. Lion King, Frozen, Minecraft, The Avengers, and Toy Story are some of my most popular! - Love, Mrs. Honeybee 😊💕P.S. My little trick….is to weave mindfulness and meditation techniques into all of my bedtime stories!___________________😊 Order a PERSONALIZED STORY😊 Mrs. Honeybee will read a story to you, using your name!😊 HoneybeeHello.com___________________💖 Unlock “The Secret Stories”💖 https://bit.ly/3jxIG2W ________________________Send Mrs. Honeybee a message:https://HoneybeeLibrary.com/send ________________________😊 Visit the Honeybee Gift Shop for more treats!😊 HoneybeeHello.com________________________Honeybee Kids Podcast with Mrs. Honeybee creates bedtime stories and relaxing music for kids! All of my stories include elements of mindfulness and meditation because I believe a great day starts the night before, at bedtime! My podcast is full of relaxing bedtime stories for kids to enjoy!My stories and meditations for children are great for: Bedtime, Sleep, Anxiety, Stress, Worry, Relaxation and expanding the imagination! I make: Guided Meditation, Relaxing Music, Kids Meditation, Guided Meditation for Children, Kids Relaxation, Bedtime Stories, Sleep Meditation for Children, Mindfulness for kids, Kids Meditation for anxiety and depression, Sleep Talk-down, Sleep Meditation, Hypnosis, Guided Imagery, Guided Visualization, Kids Bedtime, Bedtime, Children Bedtime Stories, Kids Bedtime Stories, Meditation and Relaxation for Kids and Adults of all ages.This story is about: Pokemon, pikachu, ash ketchum, charizard, go, masters, poke, mon, Pocket Monsters, Nintendo, anime, video game, trading card game, charmander, professor oak, movie, Pokemon, Pikachu, a pokemon adventure, pokemon audio adventure, pokemon sleep story, pokemon bedtime story, pokemon for adults, pokemon for grown ups, pokemon stories, pikachu and ash, pokemon bedtime stories, pokemon go, pokemon sleep, pokemon go app, pokemon sleep app Sometimes referred to as: ASMR, ASMR for kids, ASMR children, ASMR sleep, ASMR bedtime, ASMR for bedtime, ASMR child, sleep meditation for kids,kids sleep meditation,kids meditation sleep,kids sleep,sleep story,bedtime story,kids bedtime meditation,meditation for kids,meditation for kids sleep,sleep stories, sleep stories for kids, children sleep music, children sleep stories, sleep music kids, kids meditation,kids guided meditation,kids meditation guided,guided meditation,sleep meditation,childrens meditation,guided meditation for kids,kids,children,meditation,bedtime meditation, kids yoga,yoga for kids, yoga for children, kid meditation app, kids sleep app, childrens sleep app, guided imagery for kids,guided visualization for kids,kids meditation,kids relaxation,new horizon, custom bedtime story, kids with anxiety, bedtime anxiety, kids depression, Autism relaxation, autism bedtime story, autism sleep relief, autism meditation for kids, autism bedtime, calm kids app, kids calming app, kid meditation app, bedtime stories for kids, sleep stories, goodnight children, sleep story Sometimes referred to as: ASMR, ASMR for kids, ASMR children, ASMR sleep, ASMR bedtime, ASMR for bedtime, ASMR child, sleep meditation for kids,kids sleep meditation,kids meditation sleep,kids sleep,sleep story,bedtime story,kids bedtime meditation,meditation for kids,meditation for kids sleep,sleep stories, sleep stories for kids, children sleep music, children sleep stories, sleep music kids, kids meditation,kids guided meditation,kids meditation guided,guided meditation,sleep meditation,childrens meditation,guided meditation for kids,kids,children,meditation,bedtime meditation, kids yoga,yoga for kids, yoga for children, kid meditation app, kids sleep app, childrens sleep app, guided imagery for kids,guided visualization for kids,kids meditation,kids relaxation,new horizon, custom bedtime story, kids with anxiety, bedtime anxiety, kids depression, Autism relaxation, autism bedtime story, autism sleep relief, autism meditation for kids, autism bedtime, calm kids app, kids calming app, kid meditation app, bedtime stories for kids, sleep stories, goodnight children, sleep story",
+        "html_description": "Pikachu and Ash await! - Love, Mrs. Honeybee ❤️&#x1f41d;&#x1f60a; <br /><br />&#x1f496; Want more Bedtime Stories?<br /><br />&#x1f496; Join the Honeybee Library!<br />&#x1f496; HoneybeeLibrary.com<br /><br />LISTEN TO:<br />- Hundreds of exclusive Bedtime Stories<br />- Longer Bedtime Stories<br />- No Advertisements<br /><br />Join my Private Podcast &amp; listen with your favorite podcast app!<br />HoneybeeLibrary.com<br />____________________<br /><br />Request a story: <a href=\"https://bit.ly/3nmr7VS\" rel=\"nofollow\">https://bit.ly/3nmr7VS</a> <br />____________________<br /><br />My name is Mrs. Honeybee and my mission is to make bedtime easier! &#x1f60a;&#x1f495; I write bedtime stories inspired by movies &amp; video games that I love. Lion King, Frozen, Minecraft, The Avengers, and Toy Story are some of my most popular! <br /><br />- Love, Mrs. Honeybee &#x1f60a;&#x1f495;<br /><br />P.S. My little trick….is to weave mindfulness and meditation techniques into all of my bedtime stories!<br />___________________<br /><br />&#x1f60a; Order a PERSONALIZED STORY<br />&#x1f60a; Mrs. Honeybee will read a story to you, using your name!<br />&#x1f60a; HoneybeeHello.com<br />___________________<br /><br />&#x1f496; Unlock “The Secret Stories”<br />&#x1f496; <a href=\"https://bit.ly/3jxIG2W\" rel=\"nofollow\">https://bit.ly/3jxIG2W</a> <br />________________________<br /><br />Send Mrs. Honeybee a message:<br /><a href=\"https://HoneybeeLibrary.com/send\" rel=\"nofollow\">https://HoneybeeLibrary.com/send</a> <br />________________________<br /><br />&#x1f60a; Visit the Honeybee Gift Shop for more treats!<br />&#x1f60a; HoneybeeHello.com<br />________________________<br /><br />Honeybee Kids Podcast with Mrs. Honeybee creates bedtime stories and relaxing music for kids! All of my stories include elements of mindfulness and meditation because I believe a great day starts the night before, at bedtime! My podcast is full of relaxing bedtime stories for kids to enjoy!<br /><br />My stories and meditations for children are great for: Bedtime, Sleep, Anxiety, Stress, Worry, Relaxation and expanding the imagination!<br /> <br />I make: Guided Meditation, Relaxing Music, Kids Meditation, Guided Meditation for Children, Kids Relaxation, Bedtime Stories, Sleep Meditation for Children, Mindfulness for kids, Kids Meditation for anxiety and depression, Sleep Talk-down, Sleep Meditation, Hypnosis, Guided Imagery, Guided Visualization, Kids Bedtime, Bedtime, Children Bedtime Stories, Kids Bedtime Stories, Meditation and Relaxation for Kids and Adults of all ages.<br /><br />This story is about: Pokemon, pikachu, ash ketchum, charizard, go, masters, poke, mon, Pocket Monsters, Nintendo, anime, video game, trading card game, charmander, professor oak, movie, Pokemon, Pikachu, a pokemon adventure, pokemon audio adventure, pokemon sleep story, pokemon bedtime story, pokemon for adults, pokemon for grown ups, pokemon stories, pikachu and ash, pokemon bedtime stories, pokemon go, pokemon sleep, pokemon go app, pokemon sleep app<br /> <br />Sometimes referred to as: ASMR, ASMR for kids, ASMR children, ASMR sleep, ASMR bedtime, ASMR for bedtime, ASMR child, sleep meditation for kids,kids sleep meditation,kids meditation sleep,kids sleep,sleep story,bedtime story,kids bedtime meditation,meditation for kids,meditation for kids sleep,sleep stories, sleep stories for kids, children sleep music, children sleep stories, sleep music kids, kids meditation,kids guided meditation,kids meditation guided,guided meditation,sleep meditation,childrens meditation,guided meditation for kids,kids,children,meditation,bedtime meditation, kids yoga,yoga for kids, yoga for children, kid meditation app, kids sleep app, childrens sleep app, guided imagery for kids,guided visualization for kids,kids meditation,kids relaxation,new horizon, custom bedtime story, kids with anxiety, bedtime anxiety, kids depression, Autism relaxation, autism bedtime story, autism sleep relief, autism meditation for kids, autism bedtime, calm kids app, kids calming app, kid meditation app, bedtime stories for kids, sleep stories, goodnight children, sleep story<br /> <br />Sometimes referred to as: ASMR, ASMR for kids, ASMR children, ASMR sleep, ASMR bedtime, ASMR for bedtime, ASMR child, sleep meditation for kids,kids sleep meditation,kids meditation sleep,kids sleep,sleep story,bedtime story,kids bedtime meditation,meditation for kids,meditation for kids sleep,sleep stories, sleep stories for kids, children sleep music, children sleep stories, sleep music kids, kids meditation,kids guided meditation,kids meditation guided,guided meditation,sleep meditation,childrens meditation,guided meditation for kids,kids,children,meditation,bedtime meditation, kids yoga,yoga for kids, yoga for children, kid meditation app, kids sleep app, childrens sleep app, guided imagery for kids,guided visualization for kids,kids meditation,kids relaxation,new horizon, custom bedtime story, kids with anxiety, bedtime anxiety, kids depression, Autism relaxation, autism bedtime story, autism sleep relief, autism meditation for kids, autism bedtime, calm kids app, kids calming app, kid meditation app, bedtime stories for kids, sleep stories, goodnight children, sleep story",
+        "duration_ms": 2047137,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/episode/34n7jyTljm8HW6FSz3JC7y"
+        },
+        "href": "https://api.spotify.com/v1/episodes/34n7jyTljm8HW6FSz3JC7y",
+        "id": "34n7jyTljm8HW6FSz3JC7y",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/9326cc3dd48bb0216762d61d22247b70e0503c83",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/73ecf9d205422b4e150928a5ab16d82d17aad9f0",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/0989527ea55cd8e2115c5fa57bb984a1048e76c7",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "is_externally_hosted": false,
+        "is_playable": true,
+        "language": "en",
+        "languages": ["en"],
+        "name": "Pokemon - Bedtime Story",
+        "release_date": "2020-03-15",
+        "release_date_precision": "day",
+        "type": "episode",
+        "uri": "spotify:episode:34n7jyTljm8HW6FSz3JC7y"
+      },
+      {
+        "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/1E24Tzq1j4S72UJZSzoJVj/clip_869000_924000.mp3",
+        "description": "by Simcha Whitehall Ash embarks on an epic island challenge to prove himself and help the island of Alola in the process. Story starts at ~3:03 If you'd like to support the podcast, you can ⁠⁠⁠⁠⁠⁠donate via PayPal here⁠⁠⁠⁠⁠⁠.  If you are interested in purchasing this book, please consider using one of our affiliate links below to help support the podcast (we earn a small commission from each purchase at no extra cost to you): ⁠⁠⁠Purchase at Amazon⁠⁠⁠ (legal disclosure: As an Amazon Associate we earn from qualifying purchases)  ---   Send in a voice message: https://podcasters.spotify.com/pod/show/read-along-with-miles/message",
+        "html_description": "<p>by Simcha Whitehall</p><br/><p>Ash embarks on an epic island challenge to prove himself and help the island of Alola in the process.</p><br/><p>Story starts at ~3:03</p><br/><p>If you&#39;d like to support the podcast, you can <a href=\"https://www.paypal.com/donate/?hosted_button_id&#61;YQA424J5SXASG\" rel=\"nofollow\">⁠⁠⁠⁠⁠⁠donate via PayPal here⁠⁠⁠⁠⁠⁠</a>. </p><br/><p>If you are interested in purchasing this book, please consider using one of our affiliate links below to help support the podcast (we earn a small commission from each purchase at no extra cost to you):</p><br/><p><a href=\"https://amzn.to/3UnIxT5\" rel=\"nofollow\">⁠⁠⁠Purchase at Amazon⁠⁠⁠</a> (legal disclosure: As an Amazon Associate we earn from qualifying purchases)</p><br/>--- <br/>Send in a voice message: https://podcasters.spotify.com/pod/show/read-along-with-miles/message",
+        "duration_ms": 1203652,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/episode/73JQ4xxm6o11lRlT1l4Lb1"
+        },
+        "href": "https://api.spotify.com/v1/episodes/73JQ4xxm6o11lRlT1l4Lb1",
+        "id": "73JQ4xxm6o11lRlT1l4Lb1",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab6765630000ba8a424efa38993c902cf7add046",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67656300005f1f424efa38993c902cf7add046",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6765630000f68d424efa38993c902cf7add046",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "is_externally_hosted": false,
+        "is_playable": true,
+        "language": "en",
+        "languages": ["en"],
+        "name": "Pokemon Story: Ash's Epic Island Challenge",
+        "release_date": "2023-04-11",
+        "release_date_precision": "day",
+        "type": "episode",
+        "uri": "spotify:episode:73JQ4xxm6o11lRlT1l4Lb1"
+      },
+      {
+        "audio_preview_url": "https://podz-content.spotifycdn.com/audio/clips/4enB9hlOtvdC41qrbh1JFg/clip_278181_352046.mp3",
+        "description": "0:00 Intro 0:09 Per message 7:35 Boss from hell Learn more about your ad choices. Visit megaphone.fm/adchoices",
+        "html_description": "<p>0:00 Intro</p><p>0:09 Per message</p><p>7:35 Boss from hell</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://megaphone.fm/adchoices\" rel=\"nofollow\">megaphone.fm/adchoices</a></p>",
+        "duration_ms": 899056,
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/episode/52Y4MRlvT6E5ynKAeo1s4T"
+        },
+        "href": "https://api.spotify.com/v1/episodes/52Y4MRlvT6E5ynKAeo1s4T",
+        "id": "52Y4MRlvT6E5ynKAeo1s4T",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab6765630000ba8a169eb6511a255e01ed31b16f",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab67656300005f1f169eb6511a255e01ed31b16f",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6765630000f68d169eb6511a255e01ed31b16f",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "is_externally_hosted": false,
+        "is_playable": true,
+        "language": "en",
+        "languages": ["en"],
+        "name": "r/Prorevenge I Stole My Bully's $40,000 Pokemon Card Collection",
+        "release_date": "2023-11-06",
+        "release_date_precision": "day",
+        "type": "episode",
+        "uri": "spotify:episode:52Y4MRlvT6E5ynKAeo1s4T"
+      }
+    ]
+  },
+  "audiobooks": {
+    "href": "https://api.spotify.com/v1/search?query=pokemon&type=audiobook&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=pokemon&type=audiobook&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 42,
+    "items": [
+      {
+        "authors": [
+          {
+            "name": "Merlin Mill"
+          }
+        ],
+        "copyrights": [],
+        "description": "Author(s): Merlin Mill\nNarrator(s): Merlin Mill\n\nDid you know that the original Pokémon Gold and Silver were intended to be the last games in the series until the CEO decided to gamble on just one more generation? Or that Pokémon Go broke five Guinness World Records within a month of its release? Do you know which two starter Pokémon are the only ones with dual typing? Or in which regions the starter Pokémon stay pure to their type through each evolution? This fascinating audiobook contains over 100 amazing facts about Pokémon, with chapters including the games, the movies, statistics and so much more. So whether you’re the world’s biggest Poké-fan or you are completely new to the franchise, this is the perfect addition to your audiobook collection.",
+        "html_description": "Author(s): Merlin Mill<br/>Narrator(s): Merlin Mill<br/>Did you know that the original Pokémon Gold and Silver were intended to be the last games in the series until the CEO decided to gamble on just one more generation? Or that Pokémon Go broke five Guinness World Records within a month of its release? Do you know which two starter Pokémon are the only ones with dual typing? Or in which regions the starter Pokémon stay pure to their type through each evolution? This fascinating audiobook contains over 100 amazing facts about Pokémon, with chapters including the games, the movies, statistics and so much more. So whether you’re the world’s biggest Poké-fan or you are completely new to the franchise, this is the perfect addition to your audiobook collection.",
+        "edition": "Unabridged",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/7rGqXbTL17NtGNUzCt4UBG"
+        },
+        "href": "https://api.spotify.com/v1/audiobooks/7rGqXbTL17NtGNUzCt4UBG",
+        "id": "7rGqXbTL17NtGNUzCt4UBG",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab676663000022a87c940b09073ead280b984d44",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000db5b7c940b09073ead280b984d44",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000703b7c940b09073ead280b984d44",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "languages": ["English"],
+        "media_type": "audio",
+        "name": "101 Amazing Facts About Pokémon",
+        "narrators": [
+          {
+            "name": "Merlin Mill"
+          }
+        ],
+        "publisher": "Andrews UK",
+        "type": "audiobook",
+        "uri": "spotify:show:7rGqXbTL17NtGNUzCt4UBG",
+        "total_chapters": 14,
+        "is_externally_hosted": false
+      },
+      {
+        "authors": [
+          {
+            "name": "Anthony Bean, PhD"
+          }
+        ],
+        "copyrights": [],
+        "description": "Author(s): Anthony Bean, PhD\nNarrator(s): Erik Lawrence\n\n<p><strong><em>“I see now that the circumstances of one’s birth are irrelevant. It is what you do with the gift of life that determines who you are.” –</em> Mewtwo, <em>Pokemon: The First Movie.</em></strong></p><p>For more than two decades, Ash Ketchum, has been chasing his dream of becoming a Pokémon Master. His personal journey spans more than and 1,000 television episodes, 22 films, 122 <em>Pokémon </em>games (as of fall of 2021), discovering over 800 different species of Pokémon, numerous card games, and other merchandise children of the 90s still treasure today. </p><p><em>The Psychology of Pokémon</em> guides gamers on a real-world quest of self-discovery so that they can Catch ‘em All. And, as part of this examination, psychologists, clinicians, video game researchers, professors, and enthusiasts unravel the mysteries of the Pokémon series by asking:</p><p>·        Why is the Pokémon series so beloved by everyone even after we have grown up?</p><p>·        What is the reason we trust a 10-year-old to accomplish the mission to become a Pokémon master and how does this affect our own sense of childhood?</p><p>·        What can we take away from our own journey of the Pokémon series and its impact on catching them all?</p><p>·        How can Ash Ketchum's perseverance and resilience teach us about Grit in the face of adversity?</p><p>·        Why was 'Twitch Plays Pokémon' such an inspiration to us all?</p><br /><p> </p><p>Think you know <em>Pokémon</em>? <em>The Psychology of Pokémon</em> explores how the game resonates with a player's psychological drive toward an emotional sense of wholeness, bonding, and completion as they take part in this epic quest.</p>",
+        "html_description": "Author(s): Anthony Bean, PhD<br/>Narrator(s): Erik Lawrence<br/>&lt;p&gt;&lt;strong&gt;&lt;em&gt;“I see now that the circumstances of one’s birth are irrelevant. It is what you do with the gift of life that determines who you are.” –&lt;/em&gt; Mewtwo, &lt;em&gt;Pokemon: The First Movie.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;For more than two decades, Ash Ketchum, has been chasing his dream of becoming a Pokémon Master. His personal journey spans more than and 1,000 television episodes, 22 films, 122 &lt;em&gt;Pokémon &lt;/em&gt;games (as of fall of 2021), discovering over 800 different species of Pokémon, numerous card games, and other merchandise children of the 90s still treasure today. &lt;/p&gt;&lt;p&gt;&lt;em&gt;The Psychology of Pokémon&lt;/em&gt; guides gamers on a real-world quest of self-discovery so that they can Catch ‘em All. And, as part of this examination, psychologists, clinicians, video game researchers, professors, and enthusiasts unravel the mysteries of the Pokémon series by asking:&lt;/p&gt;&lt;p&gt;·        Why is the Pokémon series so beloved by everyone even after we have grown up?&lt;/p&gt;&lt;p&gt;·        What is the reason we trust a 10-year-old to accomplish the mission to become a Pokémon master and how does this affect our own sense of childhood?&lt;/p&gt;&lt;p&gt;·        What can we take away from our own journey of the Pokémon series and its impact on catching them all?&lt;/p&gt;&lt;p&gt;·        How can Ash Ketchum&#39;s perseverance and resilience teach us about Grit in the face of adversity?&lt;/p&gt;&lt;p&gt;·        Why was &#39;Twitch Plays Pokémon&#39; such an inspiration to us all?&lt;/p&gt;&lt;br /&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;Think you know &lt;em&gt;Pokémon&lt;/em&gt;? &lt;em&gt;The Psychology of Pokémon&lt;/em&gt; explores how the game resonates with a player&#39;s psychological drive toward an emotional sense of wholeness, bonding, and completion as they take part in this epic quest.&lt;/p&gt;",
+        "edition": "Unabridged",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/2oQ0AOGSfTw6DseuDpNwDj"
+        },
+        "href": "https://api.spotify.com/v1/audiobooks/2oQ0AOGSfTw6DseuDpNwDj",
+        "id": "2oQ0AOGSfTw6DseuDpNwDj",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab676663000022a8ec0b9995ef10a408ff4338d3",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000db5bec0b9995ef10a408ff4338d3",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000703bec0b9995ef10a408ff4338d3",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "languages": ["English"],
+        "media_type": "audio",
+        "name": "The Psychology of Pokemon: The Power to Catch 'Em All",
+        "narrators": [
+          {
+            "name": "Erik Lawrence"
+          }
+        ],
+        "publisher": "Leyline Publishing",
+        "type": "audiobook",
+        "uri": "spotify:show:2oQ0AOGSfTw6DseuDpNwDj",
+        "total_chapters": 22,
+        "is_externally_hosted": false
+      },
+      {
+        "authors": [
+          {
+            "name": "HowExpert"
+          },
+          {
+            "name": "Brian Metz"
+          }
+        ],
+        "copyrights": [],
+        "description": "Author(s): HowExpert, Brian Metz\nNarrator(s): Eddie Leonard Jr.\n\n<p>Brian Metz has been a fan of Pokemon since age 10. He can even sing the Pokerap! He first played <em>Pokemon Red</em>, and, after putting well over a hundred hours into the game, he played <em>Pokemon Gold</em>. Ever since his first time playing Pokemon, he has wondered what it would be like to catch Pokemon in the real world. On July 6, 2016, he downloaded <em>Pokemon Go</em> and began life as a real life Pokemon trainer. Just like the Pokemon stories, he's met new friends and seen new places while chasing or battling new Pokemon, all without spending a penny.</p><p><em>Pokemon Go</em> is a free-to-play app produced by Niantic. Of course, Niantic would love for you to spend all of your money in the game. Thankfully, you don't have to pay a dime in order to play and enjoy this game. In this helpful guide, you will learn the basics of playing <em>Pokemon Go</em>, from how to catch Pokemon to understanding the bonus XP system, as well as how to earn Pokecoins for free in order to buy items. You will even learn what to spend those hard earned Pokecoins on, what Pokemon types mean for your gym battles, and how to understand a Pokemon's hidden stats. Whether you are just a beginner or an experienced player, this guide explains the intricacies of <em>Pokemon Go</em> and shows you how to make the most of it without spending any money. With tips to make the most of your items and strategies for leveling up quickly, this how-to book will send you straight to life as a Pokemon Master!</p><br /><p>HowExpert publishes quick 'how to' guides on all topics from A to Z by everyday experts.</p>",
+        "html_description": "Author(s): HowExpert, Brian Metz<br/>Narrator(s): Eddie Leonard Jr.<br/>&lt;p&gt;Brian Metz has been a fan of Pokemon since age 10. He can even sing the Pokerap! He first played &lt;em&gt;Pokemon Red&lt;/em&gt;, and, after putting well over a hundred hours into the game, he played &lt;em&gt;Pokemon Gold&lt;/em&gt;. Ever since his first time playing Pokemon, he has wondered what it would be like to catch Pokemon in the real world. On July 6, 2016, he downloaded &lt;em&gt;Pokemon Go&lt;/em&gt; and began life as a real life Pokemon trainer. Just like the Pokemon stories, he&#39;s met new friends and seen new places while chasing or battling new Pokemon, all without spending a penny.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Pokemon Go&lt;/em&gt; is a free-to-play app produced by Niantic. Of course, Niantic would love for you to spend all of your money in the game. Thankfully, you don&#39;t have to pay a dime in order to play and enjoy this game. In this helpful guide, you will learn the basics of playing &lt;em&gt;Pokemon Go&lt;/em&gt;, from how to catch Pokemon to understanding the bonus XP system, as well as how to earn Pokecoins for free in order to buy items. You will even learn what to spend those hard earned Pokecoins on, what Pokemon types mean for your gym battles, and how to understand a Pokemon&#39;s hidden stats. Whether you are just a beginner or an experienced player, this guide explains the intricacies of &lt;em&gt;Pokemon Go&lt;/em&gt; and shows you how to make the most of it without spending any money. With tips to make the most of your items and strategies for leveling up quickly, this how-to book will send you straight to life as a Pokemon Master!&lt;/p&gt;&lt;br /&gt;&lt;p&gt;HowExpert publishes quick &#39;how to&#39; guides on all topics from A to Z by everyday experts.&lt;/p&gt;",
+        "edition": "Unabridged",
+        "explicit": false,
+        "external_urls": {
+          "spotify": "https://open.spotify.com/show/6ioQkvudw0tLvglesHXqtx"
+        },
+        "href": "https://api.spotify.com/v1/audiobooks/6ioQkvudw0tLvglesHXqtx",
+        "id": "6ioQkvudw0tLvglesHXqtx",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab676663000022a81154050f8880ce48379d22c7",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000db5b1154050f8880ce48379d22c7",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6766630000703b1154050f8880ce48379d22c7",
+            "height": 64,
+            "width": 64
+          }
+        ],
+        "languages": ["English"],
+        "media_type": "audio",
+        "name": "How To Play Pokemon Go With Little To No Budget",
+        "narrators": [
+          {
+            "name": "Eddie Leonard Jr."
+          }
+        ],
+        "publisher": "HowExpert",
+        "type": "audiobook",
+        "uri": "spotify:show:6ioQkvudw0tLvglesHXqtx",
+        "total_chapters": 10,
+        "is_externally_hosted": false
+      }
+    ]
+  }
+}
