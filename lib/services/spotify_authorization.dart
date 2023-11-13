@@ -6,8 +6,8 @@ class SpotifyAuthorization {
     const clientId = 'b2468d9921304ca7af7d74ade787a068';
     const clientSecret = '554bdfd2dd9442349c85aeb1f6ac810e';
 
-    final authorization = 'Basic ${base64Encode(
-        utf8.encode('$clientId:$clientSecret'))}';
+    final authorization =
+        'Basic ${base64Encode(utf8.encode('$clientId:$clientSecret'))}';
 
     final response = await http.post(
       Uri.parse('https://accounts.spotify.com/api/token'),
@@ -27,5 +27,4 @@ class SpotifyAuthorization {
       return null;
     }
   }
-
 }
