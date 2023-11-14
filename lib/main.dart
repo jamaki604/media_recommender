@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
+import 'package:media_recommender/Widgets/tracks_list_widget.dart';
 import 'package:media_recommender/models/spotify_search_results.dart';
 import 'package:media_recommender/services/spotify_authorization.dart';
 import 'package:media_recommender/services/spotify_query_parser.dart';
 import 'package:media_recommender/services/spotify_search_service.dart';
 import 'package:media_recommender/models/track.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
   runApp(const MyApp());
@@ -128,36 +127,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return spotifyQueryParser.parseTracks(jsonResponse);
   }
 
-  Widget buildTrackList(List<Track> tracks) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: tracks.length,
-      itemBuilder: (context, index) {
-        return ListTile(
-            title: Text(
-              tracks[index].name,
-              style: const TextStyle(
-                color: Colors.green,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            subtitle: Text(tracks[index].artist),
-            onTap: () async {
-              final url = tracks[index].href;
-              if (await canLaunchUrlString(url)) {
-                await launchUrlString(url);
-              } else {
-                if (mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Could not launch URL')),
-                  );
-                }
-              }
-            });
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -215,7 +184,7 @@ class _MyHomePageState extends State<MyHomePage> {
               loadingStatus
                   ? const Center(child: CircularProgressIndicator())
                   : tracksList.isNotEmpty
-                      ? buildTrackList(tracksList)
+                      ? TrackListWidget(tracks: tracksList)
                       : const Text(
                           'No tracks found. Please enter a search term and press Submit or Enter.',
                           textAlign: TextAlign.center,
