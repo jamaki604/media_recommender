@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:media_recommender/parse_results.dart';
-import 'package:media_recommender/spotify_authorization.dart';
-import 'package:media_recommender/spotify_query_parser.dart';
-import 'package:media_recommender/spotify_query_updater.dart';
-import 'package:media_recommender/track.dart';
+import 'package:media_recommender/models/spotify_search_results.dart';
+import 'package:media_recommender/services/spotify_authorization.dart';
+import 'package:media_recommender/services/spotify_query_parser.dart';
+import 'package:media_recommender/services/spotify_search_service.dart';
+import 'package:media_recommender/models/track.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
@@ -18,10 +18,35 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Spotify Track Finder',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-        useMaterial3: true,
+        primarySwatch: Colors.green,
+        // brightness: Brightness.dark, *use for a dark mode consider an option later
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(25.0),
+            borderSide: const BorderSide(color: Colors.white70),
+          ),
+        ),
+        buttonTheme: ButtonThemeData(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.0)),
+          buttonColor: Colors.greenAccent,
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.green,
+            padding:
+                const EdgeInsets.symmetric(horizontal: 32.0, vertical: 12.0),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(18.0),
+            ),
+          ),
+        ),
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(foregroundColor: Colors.greenAccent),
+        ),
       ),
-      home: const MyHomePage(title: 'Spotify Track Finder'),
+      home: const MyHomePage(title: 'Media Recommender'),
     );
   }
 }
@@ -40,8 +65,34 @@ class _MyHomePageState extends State<MyHomePage> {
   final trackController = TextEditingController();
   final spotifyQueryParser = SpotifyQueryParser();
   final auth = SpotifyAuthorization();
-  final spotifyQuery = SpotifyQueryUpdater();
+  final spotifyQuery = SpotifySearchService();
   bool isLoading = false;
+  bool albumValue = false;
+  bool artistValue = false;
+  bool trackValue = false;
+  bool audiobookValue = false;
+  bool episodeValue = false;
+  bool showValue = false;
+  bool playlistValue = false;
+
+  @override
+  void initState() {
+    super.initState();
+    trackController.addListener(onSearchChanged);
+  }
+
+  @override
+  void dispose() {
+    trackController.removeListener(onSearchChanged);
+    trackController.dispose();
+    super.dispose();
+  }
+
+  void onSearchChanged() {
+    if (trackController.text.isNotEmpty && !isLoading) {
+      handleButtonPress();
+    }
+  }
 
   Future<void> handleButtonPress() async {
     setState(() {
@@ -52,10 +103,11 @@ class _MyHomePageState extends State<MyHomePage> {
     try {
       final result = await fetchTracks(trackController.text);
       setState(() {
-        tracksList = result.tracks.take(10).toList();  // Limiting the number of tracks to 10.
+        tracksList = result.tracks!.take(10).toList();
         isLoading = false;
       });
     } catch (error) {
+      if (!mounted) return;
       setState(() {
         isLoading = false;
       });
@@ -65,40 +117,43 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  Future<ParseResult> fetchTracks(String searchTerm) async {
+  Future<SpotifySearchResults> fetchTracks(String searchTerm) async {
     final accessToken = await auth.getSpotifyAccessToken();
     if (accessToken == null) {
       throw Exception('Failed to get the Spotify access token.');
     }
 
     final jsonResponse = await spotifyQuery.search(searchTerm, accessToken);
-    return spotifyQueryParser.parseJson(jsonResponse);
+    return spotifyQueryParser.parseTracks(jsonResponse);
   }
 
   Widget buildTrackList(List<Track> tracks) {
-    return Column(
-      children: tracks.asMap().entries.map((entry) => buildTrack(entry.key, entry.value)).toList(),
-    );
-  }
-
-  Widget buildTrack(int index, Track track) {
-    return InkWell(
-      onTap: () async {
-        if (await canLaunchUrlString(track.href)) {
-          await launchUrlString(track.href);
-        } else {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Could not launch URL')),
-          );
-        }
+    return ListView.builder(
+      shrinkWrap: true,
+      itemCount: tracks.length,
+      itemBuilder: (context, index) {
+        return ListTile(
+            title: Text(
+              tracks[index].name,
+              style: const TextStyle(
+                color: Colors.green,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            subtitle: Text(tracks[index].artist),
+            onTap: () async {
+              final url = tracks[index].href;
+              if (await canLaunchUrlString(url)) {
+                await launchUrlString(url);
+              } else {
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Could not launch URL')),
+                  );
+                }
+              }
+            });
       },
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8.0),
-        child: Text(
-          "${index + 1}. ${track.name}",  // Displaying the track number.
-          style: const TextStyle(fontSize: 24, color: Colors.blue, decoration: TextDecoration.underline),
-        ),
-      ),
     );
   }
 
@@ -106,61 +161,96 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
       body: SingleChildScrollView(
-        child: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Container(
-                padding: const EdgeInsets.all(10.0),
-                color: Colors.green,
-                child: const Text(
-                  'Enter the search term for a Spotify track list',
-                  style: TextStyle(
-                    fontSize: 24,
-                    color: Colors.white,
+              TextFormField(
+                controller: trackController,
+                decoration: InputDecoration(
+                  labelText: 'Search for a track',
+                  suffixIcon: const Icon(Icons.search),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(25.0),
                   ),
                 ),
+                onFieldSubmitted: (value) => handleButtonPress(),
+                textInputAction: TextInputAction.search,
               ),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 345,
-                child: TextField(
-                  controller: trackController,
-                  keyboardType: TextInputType.text,
-                  enabled: !isLoading,
-                  onSubmitted: (value) => handleButtonPress(),
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: "Search term goes here",
-                  ),
-                  style: Theme.of(context).textTheme.titleLarge, // Assuming titleLarge is defined in your theme.
-                ),
+              Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 8.0,
+                runSpacing: 8.0,
+                children: <Widget>[
+                  _buildCheckbox('Album', albumValue, (bool newValue) {
+                    setState(() => albumValue = newValue);
+                  }),
+                  _buildCheckbox('Artist', artistValue, (bool newValue) {
+                    setState(() => artistValue = newValue);
+                  }),
+                  _buildCheckbox('Audiobook', audiobookValue, (bool newValue) {
+                    setState(() => audiobookValue = newValue);
+                  }),
+                  _buildCheckbox('Episode', episodeValue, (bool newValue) {
+                    setState(() => episodeValue = newValue);
+                  }),
+                  _buildCheckbox('Playlist', playlistValue, (bool newValue) {
+                    setState(() => playlistValue = newValue);
+                  }),
+                  _buildCheckbox('Show', showValue, (bool newValue) {
+                    setState(() => showValue = newValue);
+                  }),
+                  _buildCheckbox('Track', trackValue, (bool newValue) {
+                    setState(() => trackValue = newValue);
+                  }),
+                ],
               ),
+              const SizedBox(height: 20),
+              isLoading
+                  ? const Center(child: CircularProgressIndicator())
+                  : tracksList.isNotEmpty
+                      ? buildTrackList(tracksList)
+                      : const Text(
+                          'No tracks found. Please enter a search term and press Submit or Enter.',
+                          textAlign: TextAlign.center,
+                        ),
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: isLoading ? null : handleButtonPress,
-                child: const Text('Submit'),
-              ),
-              isLoading
-                  ? const CircularProgressIndicator()
-                  : tracksList.isEmpty
-                  ? const Padding(
-                padding: EdgeInsets.all(10),
-                child: Text('No search results.', style: TextStyle(fontSize: 24)),
-              )
-                  : Container(
-                padding: const EdgeInsets.all(10),
-                child: buildTrackList(tracksList),
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 12.0),
+                  child: Text('Submit'),
+                ),
               ),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildCheckbox(String title, bool value, Function(bool) onChanged) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Checkbox(
+          value: value,
+          onChanged: (bool? newValue) {
+            if (newValue != null) onChanged(newValue);
+          },
+        ),
+        GestureDetector(
+          onTap: () {
+            onChanged(!value);
+          },
+          child: Text(title),
+        ),
+      ],
     );
   }
 }
