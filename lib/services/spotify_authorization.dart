@@ -1,29 +1,40 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:http/http.dart' as http;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class SpotifyAuthorization {
   Future<String?> getSpotifyAccessToken() async {
-    const clientId = 'b2468d9921304ca7af7d74ade787a068';
-    const clientSecret = '554bdfd2dd9442349c85aeb1f6ac810e';
+    await dotenv.load();
+    final clientId = dotenv.env['CLIENT_ID'];
+    final clientSecret = dotenv.env['CLIENT_SECRET'];
 
-    final authorization =
-        'Basic ${base64Encode(utf8.encode('$clientId:$clientSecret'))}';
+    final String credentials =
+        base64Encode(utf8.encode('$clientId:$clientSecret'));
 
-    final response = await http.post(
-      Uri.parse('https://accounts.spotify.com/api/token'),
-      headers: {
-        'Authorization': authorization,
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: {
-        'grant_type': 'client_credentials',
-      },
-    );
+    final headers = {
+      HttpHeaders.contentTypeHeader: 'application/x-www-form-urlencoded',
+      HttpHeaders.authorizationHeader: 'Basic $credentials',
+    };
 
-    if (response.statusCode == 200) {
-      final data = json.decode(response.body);
-      return data['access_token'] as String?;
-    } else {
+    final body = {
+      'grant_type': 'client_credentials',
+    };
+
+    final Uri url = Uri.parse('https://accounts.spotify.com/api/token');
+
+    try {
+      final response = await http.post(url, headers: headers, body: body);
+
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+        return data['access_token'];
+      } else {
+        print('Failed to obtain token: ${response.statusCode}');
+        return null;
+      }
+    } catch (e) {
+      print('Error obtaining token: $e');
       return null;
     }
   }

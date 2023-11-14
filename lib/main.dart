@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:media_recommender/models/spotify_search_results.dart';
 import 'package:media_recommender/services/spotify_authorization.dart';
 import 'package:media_recommender/services/spotify_query_parser.dart';
@@ -64,9 +65,9 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Track> tracksList = [];
   final trackController = TextEditingController();
   final spotifyQueryParser = SpotifyQueryParser();
-  final auth = SpotifyAuthorization();
+  final authorization = SpotifyAuthorization();
   final spotifyQuery = SpotifySearchService();
-  bool isLoading = false;
+  bool loadingStatus = false;
   bool albumValue = false;
   bool artistValue = false;
   bool trackValue = false;
@@ -89,14 +90,14 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void onSearchChanged() {
-    if (trackController.text.isNotEmpty && !isLoading) {
+    if (trackController.text.isNotEmpty && !loadingStatus) {
       handleButtonPress();
     }
   }
 
   Future<void> handleButtonPress() async {
     setState(() {
-      isLoading = true;
+      loadingStatus = true;
       tracksList = [];
     });
 
@@ -104,12 +105,12 @@ class _MyHomePageState extends State<MyHomePage> {
       final result = await fetchTracks(trackController.text);
       setState(() {
         tracksList = result.tracks!.take(10).toList();
-        isLoading = false;
+        loadingStatus = false;
       });
     } catch (error) {
       if (!mounted) return;
       setState(() {
-        isLoading = false;
+        loadingStatus = false;
       });
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('An error occurred: $error')),
@@ -118,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<SpotifySearchResults> fetchTracks(String searchTerm) async {
-    final accessToken = await auth.getSpotifyAccessToken();
+    final accessToken = await authorization.getSpotifyAccessToken();
     if (accessToken == null) {
       throw Exception('Failed to get the Spotify access token.');
     }
@@ -165,7 +166,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -176,7 +177,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: 'Search for a track',
                   suffixIcon: const Icon(Icons.search),
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(25.0),
+                    borderRadius: BorderRadius.circular(25),
                   ),
                 ),
                 onFieldSubmitted: (value) => handleButtonPress(),
@@ -211,7 +212,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
               const SizedBox(height: 20),
-              isLoading
+              loadingStatus
                   ? const Center(child: CircularProgressIndicator())
                   : tracksList.isNotEmpty
                       ? buildTrackList(tracksList)
@@ -221,9 +222,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: isLoading ? null : handleButtonPress,
+                onPressed: loadingStatus ? null : handleButtonPress,
                 child: const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 12.0),
+                  padding: EdgeInsets.symmetric(vertical: 12),
                   child: Text('Submit'),
                 ),
               ),
