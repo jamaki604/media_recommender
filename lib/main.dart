@@ -5,6 +5,7 @@ import 'package:media_recommender/services/spotify_authorization.dart';
 import 'package:media_recommender/services/spotify_query_parser.dart';
 import 'package:media_recommender/services/spotify_search_service.dart';
 import 'package:media_recommender/models/track.dart';
+import 'package:media_recommender/Widgets/custom_checkbox_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -157,27 +158,55 @@ class _MyHomePageState extends State<MyHomePage> {
                 spacing: 8.0,
                 runSpacing: 8.0,
                 children: <Widget>[
-                  _buildCheckbox('Album', albumValue, (bool newValue) {
-                    setState(() => albumValue = newValue);
-                  }),
-                  _buildCheckbox('Artist', artistValue, (bool newValue) {
-                    setState(() => artistValue = newValue);
-                  }),
-                  _buildCheckbox('Audiobook', audiobookValue, (bool newValue) {
-                    setState(() => audiobookValue = newValue);
-                  }),
-                  _buildCheckbox('Episode', episodeValue, (bool newValue) {
-                    setState(() => episodeValue = newValue);
-                  }),
-                  _buildCheckbox('Playlist', playlistValue, (bool newValue) {
-                    setState(() => playlistValue = newValue);
-                  }),
-                  _buildCheckbox('Show', showValue, (bool newValue) {
-                    setState(() => showValue = newValue);
-                  }),
-                  _buildCheckbox('Track', trackValue, (bool newValue) {
-                    setState(() => trackValue = newValue);
-                  }),
+                  CustomCheckboxWidget(
+                    title: 'Album',
+                    value: albumValue,
+                    onChanged: (bool newValue) {
+                      setState(() => albumValue = newValue);
+                    },
+                  ),
+                  CustomCheckboxWidget(
+                    title: 'Artist',
+                    value: artistValue,
+                    onChanged: (bool newValue) {
+                      setState(() => artistValue = newValue);
+                    },
+                  ),
+                  CustomCheckboxWidget(
+                    title: 'Audiobook',
+                    value: audiobookValue,
+                    onChanged: (bool newValue) {
+                      setState(() => audiobookValue = newValue);
+                    },
+                  ),
+                  CustomCheckboxWidget(
+                    title: 'Episode',
+                    value: episodeValue,
+                    onChanged: (bool newValue) {
+                      setState(() => episodeValue = newValue);
+                    },
+                  ),
+                  CustomCheckboxWidget(
+                    title: 'Playlist',
+                    value: playlistValue,
+                    onChanged: (bool newValue) {
+                      setState(() => playlistValue = newValue);
+                    },
+                  ),
+                  CustomCheckboxWidget(
+                    title: 'Show',
+                    value: showValue,
+                    onChanged: (bool newValue) {
+                      setState(() => showValue = newValue);
+                    },
+                  ),
+                  CustomCheckboxWidget(
+                    title: 'Track',
+                    value: trackValue,
+                    onChanged: (bool newValue) {
+                      setState(() => trackValue = newValue);
+                    },
+                  ),
                 ],
               ),
               const SizedBox(height: 20),
@@ -201,26 +230,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-    );
-  }
-
-  Widget _buildCheckbox(String title, bool value, Function(bool) onChanged) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Checkbox(
-          value: value,
-          onChanged: (bool? newValue) {
-            if (newValue != null) onChanged(newValue);
-          },
-        ),
-        GestureDetector(
-          onTap: () {
-            onChanged(!value);
-          },
-          child: Text(title),
-        ),
-      ],
     );
   }
 }
