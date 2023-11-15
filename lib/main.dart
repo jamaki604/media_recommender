@@ -118,13 +118,30 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  String getSearchTypes() {
+    List<String> types = [];
+
+    if (albumValue) types.add('album');
+    if (artistValue) types.add('artist');
+    if (trackValue) types.add('track');
+    if (audiobookValue) types.add('audiobook');
+    if (episodeValue) types.add('episode');
+    if (showValue) types.add('show');
+    if (playlistValue) types.add('playlist');
+
+    return types.join('%2C');
+  }
+
   Future<SpotifySearchResults> fetchTracks(String searchTerm) async {
     final accessToken = await authorization.getSpotifyAccessToken();
     if (accessToken == null) {
       throw Exception('Failed to get the Spotify access token.');
     }
 
-    final jsonResponse = await spotifyQuery.search(searchTerm, accessToken);
+    final types = getSearchTypes();
+
+    final jsonResponse =
+        await spotifyQuery.search(searchTerm, types, accessToken);
     return spotifyQueryParser.parseTracks(jsonResponse);
   }
 
