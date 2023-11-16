@@ -8,7 +8,4 @@ I can find more audio content to listen to. 4. Find audio content much quicker s
 
 The reason we are making this program is so that gym rats are able to find all types of content on spotify in order to get to their workouts quicker and easier.
 
-Author 1: Andre Boxsley
-Author 2: David Case
-Author 4: Liam Grube
-Author 3: Jake King
+Authors: Andre Boxsley,David Case, Liam Grube, Jake King
