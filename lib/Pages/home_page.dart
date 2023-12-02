@@ -256,7 +256,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 20),
               Center(
                 child: SizedBox(
-                  width: 200, // Adjust the width as needed
+                  width: 200,
                   child: ElevatedButton(
                     onPressed: loadingStatus ? null : handleButtonPress,
                     child: const Padding(
