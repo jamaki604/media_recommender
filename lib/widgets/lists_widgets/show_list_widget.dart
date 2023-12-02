@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:media_recommender/models/audiobook.dart';
+import 'package:media_recommender/models/show.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-class AudiobookListWidget extends StatelessWidget {
-  final List<Audiobook> audiobook;
+class ShowListWidget extends StatelessWidget {
+  final List<Show> show;
 
-  const AudiobookListWidget({super.key, required this.audiobook});
+  const ShowListWidget({super.key, required this.show});
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
-      itemCount: audiobook.length,
+      itemCount: show.length,
       itemBuilder: (context, index) {
-        final audiobookItem = audiobook[index];
+        final showItem = show[index];
         return ListTile(
           title: Text(
-            audiobookItem.name,
+            showItem.name,
             style: const TextStyle(
               color: Colors.green,
               fontWeight: FontWeight.bold,
@@ -25,15 +25,14 @@ class AudiobookListWidget extends StatelessWidget {
           subtitle: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(audiobookItem.author),
               Text(
-                audiobookItem.description,
+                showItem.description,
                 style: const TextStyle(fontSize: 12, color: Colors.grey),
               ),
             ],
           ),
           onTap: () async {
-            final url = audiobookItem.href;
+            final url = showItem.href;
             if (await canLaunchUrlString(url)) {
               await launchUrlString(url);
             } else {

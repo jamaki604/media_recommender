@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:media_recommender/models/show.dart';
+import 'package:media_recommender/models/playlist.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-class ShowListWidget extends StatelessWidget {
-  final List<Show> show;
+class PlaylistListWidget extends StatelessWidget {
+  final List<Playlist> playlist;
 
-  const ShowListWidget({super.key, required this.show});
+  const PlaylistListWidget({super.key, required this.playlist});
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
-      itemCount: show.length,
+      itemCount: playlist.length,
       itemBuilder: (context, index) {
-        final episodeItem = show[index];
+        final playlistItem = playlist[index];
         return ListTile(
           title: Text(
-            episodeItem.name,
+            playlistItem.name,
             style: const TextStyle(
               color: Colors.green,
               fontWeight: FontWeight.bold,
@@ -26,13 +26,13 @@ class ShowListWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                episodeItem.description,
+                playlistItem.description,
                 style: const TextStyle(fontSize: 12, color: Colors.grey),
               ),
             ],
           ),
           onTap: () async {
-            final url = episodeItem.href;
+            final url = playlistItem.href;
             if (await canLaunchUrlString(url)) {
               await launchUrlString(url);
             } else {

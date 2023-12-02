@@ -1,11 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:media_recommender/Widgets/album_list_widget.dart';
-import 'package:media_recommender/Widgets/artist_list_widget.dart';
-import 'package:media_recommender/Widgets/audiobook_list_widget.dart';
-import 'package:media_recommender/Widgets/episode_list_widget.dart';
-import 'package:media_recommender/Widgets/playlist_list_widget.dart';
-import 'package:media_recommender/Widgets/show_list_widget.dart';
-import 'package:media_recommender/Widgets/tracks_list_widget.dart';
 import 'package:media_recommender/models/track.dart';
 import 'package:media_recommender/models/album.dart';
 import 'package:media_recommender/models/artist.dart';
@@ -13,6 +6,13 @@ import 'package:media_recommender/models/audiobook.dart';
 import 'package:media_recommender/models/episode.dart';
 import 'package:media_recommender/models/playlist.dart';
 import 'package:media_recommender/models/show.dart';
+import 'package:media_recommender/widgets/lists_widgets/album_list_widget.dart';
+import 'package:media_recommender/widgets/lists_widgets/artist_list_widget.dart';
+import 'package:media_recommender/widgets/lists_widgets/audiobook_list_widget.dart';
+import 'package:media_recommender/widgets/lists_widgets/episode_list_widget.dart';
+import 'lists_widgets/playlist_list_widget.dart';
+import 'lists_widgets/show_list_widget.dart';
+import 'lists_widgets/tracks_list_widget.dart';
 
 class UnifiedDisplayWidget extends StatelessWidget {
   final List<Track> tracks;
