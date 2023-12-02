@@ -1,7 +1,7 @@
-class Playlist {
-  final String name;
-  final String description;
-  final String href;
+import 'media_item.dart';
 
-  Playlist(this.name, this.description, this.href);
+class Playlist extends MediaItem {
+  final String description;
+
+  Playlist(super.name, super.href, this.description);
 }

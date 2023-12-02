@@ -1,7 +1,7 @@
-class Show {
-  final String name;
-  final String description;
-  final String href;
+import 'media_item.dart';
 
-  Show(this.name, this.description, this.href);
+class Show extends MediaItem {
+  final String description;
+
+  Show(super.name, super.href, this.description);
 }

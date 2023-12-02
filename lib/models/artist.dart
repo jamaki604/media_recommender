@@ -1,6 +1,5 @@
-class Artist {
-  final String name;
-  final String href;
+import 'media_item.dart';
 
-  Artist(this.name, this.href);
+class Artist extends MediaItem {
+  Artist(super.name, super.href);
 }
