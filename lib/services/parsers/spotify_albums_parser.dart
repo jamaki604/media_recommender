@@ -1,9 +1,8 @@
 import 'dart:convert';
-import 'package:media_recommender/models/spotify_search_results.dart';
 import 'package:media_recommender/models/album.dart';
 
 class SpotifyAlbumsParser {
-  SpotifySearchResults parseAlbums(String jsonData) {
+  List<Album> parseAlbums(String jsonData) {
     final decoded = jsonDecode(jsonData);
     List<Album> albums = [];
 
@@ -14,6 +13,6 @@ class SpotifyAlbumsParser {
       albums.add(Album(name, href, artist));
     }
 
-    return SpotifySearchResults(null, albums, null, null, null, null, null);
+    return albums;
   }
 }

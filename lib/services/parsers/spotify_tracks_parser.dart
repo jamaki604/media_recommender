@@ -1,9 +1,8 @@
 import 'dart:convert';
-import 'package:media_recommender/models/spotify_search_results.dart';
 import 'package:media_recommender/models/track.dart';
 
 class SpotifyTracksParser {
-  SpotifySearchResults parseTracks(String jsonData) {
+  List<Track> parseTracks(String jsonData) {
     final decoded = jsonDecode(jsonData);
     List<Track> tracks = [];
 
@@ -14,6 +13,6 @@ class SpotifyTracksParser {
       tracks.add(Track(name, href, artist));
     }
 
-    return SpotifySearchResults(tracks, null, null, null, null, null, null);
+    return tracks;
   }
 }

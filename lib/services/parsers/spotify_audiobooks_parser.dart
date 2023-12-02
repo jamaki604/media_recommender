@@ -1,9 +1,8 @@
 import 'dart:convert';
-import 'package:media_recommender/models/spotify_search_results.dart';
 import 'package:media_recommender/models/audiobook.dart';
 
 class SpotifyAudiobooksParser {
-  SpotifySearchResults parseAudiobooks(String jsonData) {
+  List<Audiobook> parseAudiobooks(String jsonData) {
     final decoded = jsonDecode(jsonData);
     List<Audiobook> audiobooks = [];
 
@@ -15,6 +14,6 @@ class SpotifyAudiobooksParser {
       audiobooks.add(Audiobook(name, author, href, description));
     }
 
-    return SpotifySearchResults(null, null, null, audiobooks, null, null, null);
+    return audiobooks;
   }
 }

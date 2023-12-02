@@ -1,9 +1,9 @@
 import 'dart:convert';
-import 'package:media_recommender/models/spotify_search_results.dart';
+
 import 'package:media_recommender/models/show.dart';
 
 class SpotifyShowsParser {
-  SpotifySearchResults parseShows(String jsonData) {
+  List<Show> parseShows(String jsonData) {
     final decoded = jsonDecode(jsonData);
     List<Show> shows = [];
 
@@ -14,6 +14,6 @@ class SpotifyShowsParser {
       shows.add(Show(name, href, description));
     }
 
-    return SpotifySearchResults(null, null, null, null, null, null, shows);
+    return shows;
   }
 }
