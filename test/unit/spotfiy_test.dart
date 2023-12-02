@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:media_recommender/services/spotify_authorization.dart';
+import 'package:media_recommender/services/spotify_authentication/spotify_authorization.dart';
 import 'package:media_recommender/services/spotify_search_service.dart';
 
 void main() {
