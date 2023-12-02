@@ -74,7 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     trackController.addListener(onSearchChanged);
 
-    // Initialize checkbox values
     for (var type in ContentType.values) {
       contentTypeValues[type] = false;
     }
@@ -104,7 +103,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> handleButtonPress() async {
     setState(() {
       loadingStatus = true;
-      // Clear all lists to prepare for new data
       tracksList.clear();
       albumList.clear();
       artistList.clear();
