@@ -1,17 +1,8 @@
-class Audiobook{
-  final String _name;
-  final String _author;
-  final String _href;
-  final String _description;
+class Audiobook {
+  final String name;
+  final String author;
+  final String href;
+  final String description;
 
-
-  Audiobook(this._name, this._author, this._href, this._description);
-
-  String get name => _name;
-
-  String get description => _description;
-
-  String get href => _href;
-
-  String get author => _author;
+  Audiobook(this.name, this.author, this.href, this.description);
 }

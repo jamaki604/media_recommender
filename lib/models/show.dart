@@ -1,13 +1,7 @@
-class Show{
-  final String _name;
-  final String _description;
-  final String _href;
+class Show {
+  final String name;
+  final String description;
+  final String href;
 
-  Show(this._name, this._description, this._href);
-
-  String get href => _href;
-
-  String get description => _description;
-
-  String get name => _name;
+  Show(this.name, this.description, this.href);
 }

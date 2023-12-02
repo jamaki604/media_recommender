@@ -1,13 +1,7 @@
-class Album{
-  final String _name;
-  final String _artist;
-  final String _href;
+class Album {
+  final String name;
+  final String artist;
+  final String href;
 
-  Album(this._name, this._artist, this._href);
-
-  String get href => _href;
-
-  String get name => _name;
-
-  String get artist => _artist;
+  Album(this.name, this.artist, this.href);
 }

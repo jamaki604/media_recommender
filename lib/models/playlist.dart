@@ -1,13 +1,7 @@
-class Playlist{
-  final String _name;
-  final String _description;
-  final String _href;
+class Playlist {
+  final String name;
+  final String description;
+  final String href;
 
-  Playlist(this._name, this._description, this._href);
-
-  String get href => _href;
-
-  String get description => _description;
-
-  String get name => _name;
+  Playlist(this.name, this.description, this.href);
 }

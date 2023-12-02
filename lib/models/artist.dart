@@ -1,10 +1,6 @@
-class Artist{
-  final String _name;
-  final String _href;
+class Artist {
+  final String name;
+  final String href;
 
-  Artist(this._name, this._href);
-
-  String get href => _href;
-
-  String get name => _name;
+  Artist(this.name, this.href);
 }
