@@ -1,12 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:media_recommender/Widgets/album_list_widget.dart';
-import 'package:media_recommender/Widgets/artist_list_widget.dart';
-import 'package:media_recommender/Widgets/audiobook_list_widget.dart';
 import 'package:media_recommender/Widgets/custom_checkbox_widget.dart';
-import 'package:media_recommender/Widgets/episode_list_widget.dart';
-import 'package:media_recommender/Widgets/playlist_list_widget.dart';
-import 'package:media_recommender/Widgets/show_list_widget.dart';
-import 'package:media_recommender/Widgets/tracks_list_widget.dart';
 import 'package:media_recommender/models/album.dart';
 import 'package:media_recommender/models/artist.dart';
 import 'package:media_recommender/models/audiobook.dart';
@@ -25,6 +18,7 @@ import 'package:media_recommender/services/parsers/spotify_shows_parser.dart';
 import 'package:media_recommender/services/parsers/spotify_tracks_parser.dart';
 import 'package:media_recommender/services/spotify_authentication/spotify_authorization.dart';
 import 'package:media_recommender/services/spotify_search_service.dart';
+import '../widgets/unified_display_widget.dart';
 
 enum ContentType { track, album, artist, audiobook, episode, playlist, show }
 
@@ -260,66 +254,33 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: createCheckboxes(),
               ),
               const SizedBox(height: 20),
+              Center(
+                child: SizedBox(
+                  width: 200, // Adjust the width as needed
+                  child: ElevatedButton(
+                    onPressed: loadingStatus ? null : handleButtonPress,
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 12),
+                      child: Text('Submit'),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
               loadingStatus
                   ? const Text(
                       'No content found. Please enter a search term and press Submit or Enter.',
                       textAlign: TextAlign.center,
                     )
-                  : Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        if (tracksList.isNotEmpty) ...[
-                          const Text('Tracks',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18)),
-                          TrackListWidget(tracks: tracksList),
-                        ],
-                        if (albumList.isNotEmpty) ...[
-                          const Text('Albums',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18)),
-                          AlbumListWidget(album: albumList),
-                        ],
-                        if (artistList.isNotEmpty) ...[
-                          const Text('Artists',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18)),
-                          ArtistListWidget(artist: artistList),
-                        ],
-                        if (audiobookList.isNotEmpty) ...[
-                          const Text('Audiobooks',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18)),
-                          AudiobookListWidget(audiobook: audiobookList),
-                        ],
-                        if (episodeList.isNotEmpty) ...[
-                          const Text('Episodes',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18)),
-                          EpisodeListWidget(episode: episodeList),
-                        ],
-                        if (playlistList.isNotEmpty) ...[
-                          const Text('Playlists',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18)),
-                          PlaylistListWidget(playlist: playlistList),
-                        ],
-                        if (showList.isNotEmpty) ...[
-                          const Text('Shows',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18)),
-                          ShowListWidget(show: showList),
-                        ],
-                      ],
+                  : UnifiedDisplayWidget(
+                      tracks: tracksList,
+                      albums: albumList,
+                      artists: artistList,
+                      audiobooks: audiobookList,
+                      episodes: episodeList,
+                      playlists: playlistList,
+                      shows: showList,
                     ),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: loadingStatus ? null : handleButtonPress,
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 12),
-                  child: Text('Submit'),
-                ),
-              ),
             ],
           ),
         ),
