@@ -15,9 +15,18 @@ import 'package:media_recommender/models/playlist.dart';
 import 'package:media_recommender/models/show.dart';
 import 'package:media_recommender/models/spotify_search_results.dart';
 import 'package:media_recommender/models/track.dart';
-import 'package:media_recommender/services/spotify_query_parser.dart';
+import 'package:media_recommender/services/parsers/spotify_albums_parser.dart';
+import 'package:media_recommender/services/parsers/spotify_artists_parsers.dart';
+import 'package:media_recommender/services/parsers/spotify_audiobooks_parser.dart';
+import 'package:media_recommender/services/parsers/spotify_episodes_parser.dart';
+import 'package:media_recommender/services/parsers/spotify_playlists_parser.dart';
+import 'package:media_recommender/services/parsers/spotify_query_parser.dart';
+import 'package:media_recommender/services/parsers/spotify_shows_parser.dart';
+import 'package:media_recommender/services/parsers/spotify_tracks_parser.dart';
+import 'package:media_recommender/services/spotify_authentication/spotify_authorization.dart';
 import 'package:media_recommender/services/spotify_search_service.dart';
-import '../services/spotify_authorization.dart';
+
+enum ContentType { track, album, artist, audiobook, episode, playlist, show }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -39,8 +48,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final trackController = TextEditingController();
   final spotifyQueryParser = SpotifyQueryParser();
+  final spotifyTrackParser = SpotifyTracksParser();
+  final spotifyAlbumParser = SpotifyAlbumsParser();
+  final spotifyArtistParser = SpotifyArtistsParser();
+  final spotifyAudiobookParser = SpotifyAudiobooksParser();
+  final spotifyEpisodeParser = SpotifyEpisodesParser();
+  final spotifyPlaylistParser = SpotifyPlaylistsParser();
+  final spotifyShowParser = SpotifyShowsParser();
   final authorization = SpotifyAuthorization();
   final spotifyQuery = SpotifySearchService();
+
   bool loadingStatus = false;
   bool albumValue = false;
   bool artistValue = false;
@@ -80,6 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> handleButtonPress() async {
     setState(() {
       loadingStatus = true;
+      // Clear all lists to prepare for new data
       tracksList.clear();
       albumList.clear();
       artistList.clear();
@@ -90,22 +108,11 @@ class _MyHomePageState extends State<MyHomePage> {
     });
 
     try {
-      var types = {
-        'track': trackValue,
-        'artist': artistValue,
-        'album': albumValue,
-        'audiobook': audiobookValue,
-        'episode': episodeValue,
-        'show': showValue,
-        'playlist': playlistValue,
-      };
-
-      for (var entry in types.entries) {
-        if (entry.value) {
-          var results = await fetchItems(trackController.text, entry.key);
-          setState(() => updateListWithType(entry.key, results));
-        }
-      }
+      String searchTypes = getSearchTypes();
+      var results = await fetchItems(trackController.text, searchTypes);
+      setState(() {
+        updateListsWithResults(results);
+      });
     } catch (error) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
@@ -117,86 +124,77 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  void updateListWithType(String type, SpotifySearchResults results) {
-    switch (type) {
-      case 'track':
-        tracksList.addAll(results.tracks!.take(10).toList());
-        break;
-      case 'artist':
-        artistList.addAll(results.artist!.take(10).toList());
-        break;
-      case 'album':
-        albumList.addAll(results.album!.take(10).toList());
-        break;
-      case 'audiobook':
-        audiobookList.addAll(results.audiobook!.take(10).toList());
-        break;
-      case 'episode':
-        episodeList.addAll(results.episode!.take(10).toList());
-        break;
-      case 'show':
-        showList.addAll(results.show!.take(10).toList());
-        break;
-      case 'playlist':
-        playlistList.addAll(results.playlist!.take(10).toList());
-        break;
-      // Add other types if necessary
-      default:
-        throw Exception('Invalid type: $type');
+  void updateListsWithResults(SpotifySearchResults results) {
+    if (results.tracks != null && results.tracks!.isNotEmpty) {
+      tracksList.addAll(results.tracks!.take(10).toList());
+    }
+    if (results.album != null && results.album!.isNotEmpty) {
+      albumList.addAll(results.album!.take(10).toList());
+    }
+    if (results.artist != null && results.artist!.isNotEmpty) {
+      artistList.addAll(results.artist!.take(10).toList());
+    }
+    if (results.audiobook != null && results.audiobook!.isNotEmpty) {
+      audiobookList.addAll(results.audiobook!.take(10).toList());
+    }
+    if (results.episode != null && results.episode!.isNotEmpty) {
+      episodeList.addAll(results.episode!.take(10).toList());
+    }
+    if (results.show != null && results.show!.isNotEmpty) {
+      showList.addAll(results.show!.take(10).toList());
+    }
+    if (results.playlist != null && results.playlist!.isNotEmpty) {
+      playlistList.addAll(results.playlist!.take(10).toList());
     }
   }
 
   String getSearchTypes() {
     List<String> types = [];
 
-    if (albumValue) types.add('album');
-    if (artistValue) types.add('artist');
-    if (trackValue) types.add('track');
-    if (audiobookValue) types.add('audiobook');
-    if (episodeValue) types.add('episode');
-    if (showValue) types.add('show');
-    if (playlistValue) types.add('playlist');
+    if (albumValue) types.add(getSearchType(ContentType.album));
+    if (artistValue) types.add(getSearchType(ContentType.artist));
+    if (trackValue) types.add(getSearchType(ContentType.track));
+    if (audiobookValue) types.add(getSearchType(ContentType.audiobook));
+    if (episodeValue) types.add(getSearchType(ContentType.episode));
+    if (showValue) types.add(getSearchType(ContentType.show));
+    if (playlistValue) types.add(getSearchType(ContentType.playlist));
 
     return types.join('%2C');
   }
 
+  String getSearchType(ContentType type) {
+    switch (type) {
+      case ContentType.track:
+        return "track";
+      case ContentType.album:
+        return "album";
+      case ContentType.artist:
+        return "artist";
+      case ContentType.audiobook:
+        return "audiobook";
+      case ContentType.episode:
+        return "episode";
+      case ContentType.show:
+        return "show";
+      case ContentType.playlist:
+        return "playlist";
+      default:
+        return "";
+    }
+  }
+
   Future<SpotifySearchResults> fetchItems(
-      String searchTerm, String type) async {
+      String searchTerm, String searchTypes) async {
     final accessToken = await authorization.getSpotifyAccessToken();
     if (accessToken == null) {
       throw Exception('Failed to get the Spotify access token.');
     }
     final jsonResponse =
-        await spotifyQuery.search(searchTerm, type, accessToken);
+        await spotifyQuery.search(searchTerm, searchTypes, accessToken);
 
-    switch (type) {
-      case 'track':
-        return spotifyQueryParser.parseTracks(jsonResponse);
-      case 'artist':
-        return spotifyQueryParser.parseArtists(jsonResponse);
-      case 'album':
-        return spotifyQueryParser.parseAlbums(jsonResponse);
-      case 'audiobook':
-        return spotifyQueryParser.parseAudiobooks(jsonResponse);
-      case 'episode':
-        return spotifyQueryParser.parseEpisodes(jsonResponse);
-      case 'show':
-        return spotifyQueryParser.parseShows(jsonResponse);
-      case 'playlist':
-        return spotifyQueryParser.parsePlaylists(jsonResponse);
-      default:
-        throw Exception('Invalid type: $type');
-    }
-  }
-
-  bool areAllListsEmpty() {
-    return tracksList.isEmpty &&
-        albumList.isEmpty &&
-        artistList.isEmpty &&
-        audiobookList.isEmpty &&
-        episodeList.isEmpty &&
-        playlistList.isEmpty &&
-        showList.isEmpty;
+    SpotifySearchResults results =
+        SpotifyQueryParser().parseResults(jsonResponse);
+    return results;
   }
 
   @override
@@ -247,66 +245,57 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               const SizedBox(height: 20),
               loadingStatus
-                  ? const Center(child: CircularProgressIndicator())
-                  : areAllListsEmpty()
-                      ? const Text(
-                          'No content found. Please enter a search term and press Submit or Enter.',
-                          textAlign: TextAlign.center,
-                        )
-                      : Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            if (tracksList.isNotEmpty) ...[
-                              const Text('Tracks',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18)),
-                              TrackListWidget(tracks: tracksList),
-                            ],
-                            if (albumList.isNotEmpty) ...[
-                              const Text('Albums',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18)),
-                              AlbumListWidget(album: albumList),
-                            ],
-                            if (artistList.isNotEmpty) ...[
-                              const Text('Artists',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18)),
-                              ArtistListWidget(artist: artistList),
-                            ],
-                            if (audiobookList.isNotEmpty) ...[
-                              const Text('Audiobooks',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18)),
-                              AudiobookListWidget(audiobook: audiobookList),
-                            ],
-                            if (episodeList.isNotEmpty) ...[
-                              const Text('Episodes',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18)),
-                              EpisodeListWidget(episode: episodeList),
-                            ],
-                            if (playlistList.isNotEmpty) ...[
-                              const Text('Playlists',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18)),
-                              PlaylistListWidget(playlist: playlistList),
-                            ],
-                            if (showList.isNotEmpty) ...[
-                              const Text('Shows',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18)),
-                              ShowListWidget(show: showList),
-                            ],
-                          ],
-                        ),
+                  ? const Text(
+                      'No content found. Please enter a search term and press Submit or Enter.',
+                      textAlign: TextAlign.center,
+                    )
+                  : Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        if (tracksList.isNotEmpty) ...[
+                          const Text('Tracks',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18)),
+                          TrackListWidget(tracks: tracksList),
+                        ],
+                        if (albumList.isNotEmpty) ...[
+                          const Text('Albums',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18)),
+                          AlbumListWidget(album: albumList),
+                        ],
+                        if (artistList.isNotEmpty) ...[
+                          const Text('Artists',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18)),
+                          ArtistListWidget(artist: artistList),
+                        ],
+                        if (audiobookList.isNotEmpty) ...[
+                          const Text('Audiobooks',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18)),
+                          AudiobookListWidget(audiobook: audiobookList),
+                        ],
+                        if (episodeList.isNotEmpty) ...[
+                          const Text('Episodes',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18)),
+                          EpisodeListWidget(episode: episodeList),
+                        ],
+                        if (playlistList.isNotEmpty) ...[
+                          const Text('Playlists',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18)),
+                          PlaylistListWidget(playlist: playlistList),
+                        ],
+                        if (showList.isNotEmpty) ...[
+                          const Text('Shows',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18)),
+                          ShowListWidget(show: showList),
+                        ],
+                      ],
+                    ),
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: loadingStatus ? null : handleButtonPress,
