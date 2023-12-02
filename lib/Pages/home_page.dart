@@ -67,10 +67,17 @@ class _MyHomePageState extends State<MyHomePage> {
   bool showValue = false;
   bool playlistValue = false;
 
+  Map<ContentType, bool> contentTypeValues = {};
+
   @override
   void initState() {
     super.initState();
     trackController.addListener(onSearchChanged);
+
+    // Initialize checkbox values
+    for (var type in ContentType.values) {
+      contentTypeValues[type] = false;
+    }
   }
 
   @override
@@ -151,13 +158,14 @@ class _MyHomePageState extends State<MyHomePage> {
   String getSearchTypes() {
     List<String> types = [];
 
-    if (albumValue) types.add(getSearchType(ContentType.album));
-    if (artistValue) types.add(getSearchType(ContentType.artist));
-    if (trackValue) types.add(getSearchType(ContentType.track));
-    if (audiobookValue) types.add(getSearchType(ContentType.audiobook));
-    if (episodeValue) types.add(getSearchType(ContentType.episode));
-    if (showValue) types.add(getSearchType(ContentType.show));
-    if (playlistValue) types.add(getSearchType(ContentType.playlist));
+    contentTypeValues.forEach((type, value) {
+      if (value) {
+        String searchType = getSearchType(type);
+        if (searchType.isNotEmpty) {
+          types.add(searchType);
+        }
+      }
+    });
 
     return types.join('%2C');
   }
@@ -197,6 +205,31 @@ class _MyHomePageState extends State<MyHomePage> {
     return results;
   }
 
+  String capitalize(String s) {
+    if (s.isEmpty) return s;
+    return s[0].toUpperCase() + s.substring(1);
+  }
+
+  List<Widget> createCheckboxes() {
+    List<Widget> checkboxes = [];
+    contentTypeValues.forEach((type, value) {
+      String title = type.toString().split('.').last;
+      title = capitalize(title);
+
+      var checkbox = CustomCheckboxWidget(
+        title: title,
+        value: value,
+        onChanged: (newValue) {
+          setState(() {
+            contentTypeValues[type] = newValue;
+          });
+        },
+      );
+      checkboxes.add(checkbox);
+    });
+    return checkboxes;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -226,22 +259,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 alignment: WrapAlignment.center,
                 spacing: 8.0,
                 runSpacing: 8.0,
-                children: <Widget>[
-                  createCheckbox('Album', albumValue,
-                      (newValue) => setState(() => albumValue = newValue)),
-                  createCheckbox('Artist', artistValue,
-                      (newValue) => setState(() => artistValue = newValue)),
-                  createCheckbox('Track', trackValue,
-                      (newValue) => setState(() => trackValue = newValue)),
-                  createCheckbox('Audiobook', audiobookValue,
-                      (newValue) => setState(() => audiobookValue = newValue)),
-                  createCheckbox('Episode', episodeValue,
-                      (newValue) => setState(() => episodeValue = newValue)),
-                  createCheckbox('Show', showValue,
-                      (newValue) => setState(() => showValue = newValue)),
-                  createCheckbox('Playlist', playlistValue,
-                      (newValue) => setState(() => playlistValue = newValue)),
-                ],
+                children: createCheckboxes(),
               ),
               const SizedBox(height: 20),
               loadingStatus
