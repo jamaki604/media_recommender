@@ -22,37 +22,37 @@ class SpotifyQueryParser {
 
     List<Track>? tracks;
     if (typeExists('tracks', decoded)) {
-      tracks = SpotifyTracksParser().parseTracks(jsonData);
+      tracks = SpotifyTracksParser().parse(jsonData);
     }
 
     List<Album>? albums;
     if (typeExists('albums', decoded)) {
-      albums = SpotifyAlbumsParser().parseAlbums(jsonData);
+      albums = SpotifyAlbumsParser().parse(jsonData);
     }
 
     List<Artist>? artists;
     if (typeExists('artists', decoded)) {
-      artists = SpotifyArtistsParser().parseArtists(jsonData);
+      artists = SpotifyArtistsParser().parse(jsonData);
     }
 
     List<Audiobook>? audiobooks;
     if (typeExists('audiobooks', decoded)) {
-      audiobooks = SpotifyAudiobooksParser().parseAudiobooks(jsonData);
+      audiobooks = SpotifyAudiobooksParser().parse(jsonData);
     }
 
     List<Episode>? episodes;
     if (typeExists('episodes', decoded)) {
-      episodes = SpotifyEpisodesParser().parseEpisodes(jsonData);
+      episodes = SpotifyEpisodesParser().parse(jsonData);
     }
 
     List<Playlist>? playlists;
     if (typeExists('playlists', decoded)) {
-      playlists = SpotifyPlaylistsParser().parsePlaylists(jsonData);
+      playlists = SpotifyPlaylistsParser().parse(jsonData);
     }
 
     List<Show>? shows;
     if (typeExists('shows', decoded)) {
-      shows = SpotifyShowsParser().parseShows(jsonData);
+      shows = SpotifyShowsParser().parse(jsonData);
     }
 
     return SpotifySearchResults(

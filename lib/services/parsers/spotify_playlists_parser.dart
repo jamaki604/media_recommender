@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:media_recommender/models/playlist.dart';
 
 class SpotifyPlaylistsParser {
-  List<Playlist> parsePlaylists(String jsonData) {
+  List<Playlist> parse(String jsonData) {
     final decoded = jsonDecode(jsonData);
     List<Playlist> playlists = [];
 

@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:media_recommender/models/track.dart';
 
 class SpotifyTracksParser {
-  List<Track> parseTracks(String jsonData) {
+  List<Track> parse(String jsonData) {
     final decoded = jsonDecode(jsonData);
     List<Track> tracks = [];
 

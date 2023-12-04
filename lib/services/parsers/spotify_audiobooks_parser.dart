@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:media_recommender/models/audiobook.dart';
 
 class SpotifyAudiobooksParser {
-  List<Audiobook> parseAudiobooks(String jsonData) {
+  List<Audiobook> parse(String jsonData) {
     final decoded = jsonDecode(jsonData);
     List<Audiobook> audiobooks = [];
 
