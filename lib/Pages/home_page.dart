@@ -8,14 +8,7 @@ import 'package:media_recommender/models/playlist.dart';
 import 'package:media_recommender/models/show.dart';
 import 'package:media_recommender/models/spotify_search_results.dart';
 import 'package:media_recommender/models/track.dart';
-import 'package:media_recommender/services/parsers/spotify_albums_parser.dart';
-import 'package:media_recommender/services/parsers/spotify_artists_parsers.dart';
-import 'package:media_recommender/services/parsers/spotify_audiobooks_parser.dart';
-import 'package:media_recommender/services/parsers/spotify_episodes_parser.dart';
-import 'package:media_recommender/services/parsers/spotify_playlists_parser.dart';
 import 'package:media_recommender/services/parsers/spotify_query_parser.dart';
-import 'package:media_recommender/services/parsers/spotify_shows_parser.dart';
-import 'package:media_recommender/services/parsers/spotify_tracks_parser.dart';
 import 'package:media_recommender/services/spotify_authentication/spotify_authorization.dart';
 import 'package:media_recommender/services/spotify_search_service.dart';
 import '../widgets/unified_display_widget.dart';
@@ -42,24 +35,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final trackController = TextEditingController();
   final spotifyQueryParser = SpotifyQueryParser();
-  final spotifyTrackParser = SpotifyTracksParser();
-  final spotifyAlbumParser = SpotifyAlbumsParser();
-  final spotifyArtistParser = SpotifyArtistsParser();
-  final spotifyAudiobookParser = SpotifyAudiobooksParser();
-  final spotifyEpisodeParser = SpotifyEpisodesParser();
-  final spotifyPlaylistParser = SpotifyPlaylistsParser();
-  final spotifyShowParser = SpotifyShowsParser();
   final authorization = SpotifyAuthorization();
   final spotifyQuery = SpotifySearchService();
 
   bool loadingStatus = false;
-  bool albumValue = false;
-  bool artistValue = false;
-  bool trackValue = false;
-  bool audiobookValue = false;
-  bool episodeValue = false;
-  bool showValue = false;
-  bool playlistValue = false;
 
   Map<ContentType, bool> contentTypeValues = {};
 
@@ -118,7 +97,6 @@ class _MyHomePageState extends State<MyHomePage> {
         SnackBar(content: Text('An error occurred: $error')),
       );
     } finally {
-      if (!mounted) return;
       setState(() => loadingStatus = false);
     }
   }
