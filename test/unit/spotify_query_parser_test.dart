@@ -82,5 +82,12 @@ void main() {
     final result = parser.parseResults(string);
 
     expect(result.show![0].name, 'The Roaring Trainers');
+    expect(result.playlist![0].name, 'Official Pokémon Songs');
+    expect(result.episode![0].name, 'Pokemon - Bedtime Story');
+    expect(result.audiobook![0].name, '101 Amazing Facts About Pokémon');
+    expect(result.album![0].name,
+        'Pokemon - 2.b.a. Master - Music From The Hit Tv Series');
+    expect(result.artist![0].name, 'Pokémon');
+    expect(result.tracks![0].name, 'Pokémon Theme');
   });
 }
