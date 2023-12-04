@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
 
     try {
-      String searchTypes = getSearchTypes();
+      String searchTypes = formatSearchTypes();
       var results = await fetchItems(trackController.text, searchTypes);
       setState(() {
         updateListsWithResults(results);
@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  String getSearchTypes() {
+  String formatSearchTypes() {
     List<String> types = [];
 
     contentTypeValues.forEach((type, value) {
