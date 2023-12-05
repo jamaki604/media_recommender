@@ -7,6 +7,10 @@ import 'package:http/http.dart' as http;
 class SpotifyAuthorization {
   final DotEnvLoader envLoader = DotEnvLoader();
   final ErrorHandler errorHandler = ErrorHandler();
+  http.Client httpClient;
+
+  SpotifyAuthorization({http.Client? client})
+      : httpClient = client ?? http.Client();
 
   Future<String?> getSpotifyAccessToken(String spotifyURL) async {
     await envLoader.loadEnv();
