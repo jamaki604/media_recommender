@@ -8,7 +8,7 @@ class SpotifyAuthorization {
   final DotEnvLoader envLoader = DotEnvLoader();
   final ErrorHandler errorHandler = ErrorHandler();
 
-  Future<String?> getSpotifyAccessToken() async {
+  Future<String?> getSpotifyAccessToken(String spotifyURL) async {
     await envLoader.loadEnv();
     final headerBuilder = HeaderBuilder(envLoader);
     final headers = headerBuilder.buildHeaders();
@@ -17,7 +17,7 @@ class SpotifyAuthorization {
       'grant_type': 'client_credentials',
     };
 
-    final Uri url = Uri.parse('https://accounts.spotify.com/api/token');
+    final Uri url = Uri.parse(spotifyURL);
 
     try {
       final response = await http.post(url, headers: headers, body: body);

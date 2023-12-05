@@ -9,6 +9,7 @@ import 'package:media_recommender/models/show.dart';
 import 'package:media_recommender/models/spotify_search_results.dart';
 import 'package:media_recommender/models/track.dart';
 import 'package:media_recommender/services/parsers/spotify_query_parser.dart';
+import 'package:media_recommender/services/spotify_authentication/dotenv_loader.dart';
 import 'package:media_recommender/services/spotify_authentication/spotify_authorization.dart';
 import 'package:media_recommender/services/spotify_search_service.dart';
 import '../widgets/unified_display_widget.dart';
@@ -161,9 +162,12 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  final DotEnvLoader envLoader = DotEnvLoader();
   Future<SpotifySearchResults> fetchItems(
       String searchTerm, String searchTypes) async {
-    final accessToken = await authorization.getSpotifyAccessToken();
+    await envLoader.loadEnv();
+    final accessToken =
+        await authorization.getSpotifyAccessToken('${envLoader.spotifyURL}');
     if (accessToken == null) {
       throw Exception('Failed to get the Spotify access token.');
     }
