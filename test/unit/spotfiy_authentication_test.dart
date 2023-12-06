@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 import 'package:media_recommender/services/spotify_authentication/dotenv_loader.dart';
 import 'package:media_recommender/services/spotify_authentication/header_builder.dart';
 import 'package:media_recommender/services/spotify_authentication/spotify_authorization.dart';
